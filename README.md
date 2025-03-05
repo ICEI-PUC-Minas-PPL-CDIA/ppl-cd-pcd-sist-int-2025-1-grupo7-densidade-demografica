@@ -4,7 +4,7 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando qu
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Ian Vinicius Marinho Malta
 * João Gabriel de Melo Neves
 * Nome completo do aluno 3
 * Nome completo do aluno 4
