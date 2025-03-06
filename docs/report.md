@@ -55,13 +55,7 @@ explicitamente se o aluno tiver autorização para tal.
 
 ###    Objetivo geral
 
-Nesta seção deve-se escrever um pequeno parágrafo ou frase com o **objetivo geral** 
-do trabalho. O objetivo deve ser bem direto, específico e definido com verbos de 
-ação (elaborar, propor, avaliar, comparar etc.). No caso deste projeto, o objetivo é
-"desenvolver um sistema inteligente para ...". O seu objetivo geral deve ser uma
-pergunta orientada a dados. Ou seja, ela deve incluir de forma geral os dados em que
-os modelos irão se basear para atingir o objetivo.
-
+objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
 Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
