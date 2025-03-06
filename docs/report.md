@@ -1,7 +1,7 @@
-# TITULO DO PROJETO
+# Análise de transferência de emprego por enforcamento do trabalho presencial
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Ian Vinicius Marinho Malta, ian.malta@sga.pucminas.br**
 
 **João Gabriel de Melo Neves, jgmneves@sga.pucminas.br**
 
