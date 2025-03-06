@@ -5,11 +5,10 @@
 
 **João Gabriel de Melo Neves, jgmneves@sga.pucminas.br**
 
-**Nome completo do Aluno 3, email do aluno 3**
+**Beatriz Azevedo dos Santos, beatriz.santos.1595043.sga.pucminas.br**
 
 ---
 
-Professores:
 
 **Prof. Hugo Bastos de Paula**
 
