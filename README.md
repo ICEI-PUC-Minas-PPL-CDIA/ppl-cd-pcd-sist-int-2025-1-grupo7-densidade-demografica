@@ -7,7 +7,7 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando qu
 * Ian Vinicius Marinho Malta
 * João Gabriel de Melo Neves
 * Beatriz Azevedo dos Santos
-* Nome completo do aluno 4
+* Thales Ribeiro Melo
 
 ## Professor
 
