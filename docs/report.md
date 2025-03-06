@@ -3,7 +3,7 @@
 
 **Nome completo do Aluno 1, email do aluno 1**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**João Gabriel de Melo Neves, jgmneves@sga.pucminas.br**
 
 **Nome completo do Aluno 3, email do aluno 3**
 
@@ -11,8 +11,7 @@
 
 Professores:
 
-** Prof. Nome do Prof 1 **
-** Prof. Nome do Prof 2 **
+**Prof. Hugo Bastos de Paula**
 
 ---
 
