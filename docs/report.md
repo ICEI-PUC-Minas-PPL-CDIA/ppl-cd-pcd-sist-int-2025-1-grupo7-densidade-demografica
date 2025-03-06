@@ -7,8 +7,9 @@
 
 **Beatriz Azevedo dos Santos, beatriz.santos.1595043.sga.pucminas.br**
 
----
+**Thales Ribeiro Melo, thales.melo@sga.pucminas.br**
 
+---
 
 **Prof. Hugo Bastos de Paula**
 
