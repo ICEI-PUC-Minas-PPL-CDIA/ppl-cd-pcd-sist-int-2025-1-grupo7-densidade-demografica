@@ -5,7 +5,7 @@
 
 **João Gabriel de Melo Neves, jgmneves@sga.pucminas.br**
 
-**Beatriz Azevedo dos Santos, beatriz.santos.1595043.sga.pucminas.br**
+**Beatriz Azevedo dos Santos, beatriz.santos.1595043@sga.pucminas.br**
 
 **Thales Ribeiro Melo, thales.melo@sga.pucminas.br**
 
