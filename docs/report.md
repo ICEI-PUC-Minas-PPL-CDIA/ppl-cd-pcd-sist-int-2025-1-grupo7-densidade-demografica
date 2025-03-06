@@ -55,7 +55,7 @@ explicitamente se o aluno tiver autorização para tal.
 
 ###    Objetivo geral
 
-objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
+O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
 Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
