@@ -56,9 +56,9 @@ explicitamente se o aluno tiver autorização para tal.
 O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
-você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar 
-no seu trabalho.
+- Analisar os dados e por meio deles obter os benefícios de fazer os funcionários voltarem a trabalhar 100% presencialmente com a intenção de se obter maior lucro, sendo esses dados calculados pela produtividade individual e em grupo
+
+- Analisar os dados e por meio deles obter as desvantagens de realizar essa mudança como a mudança de certos funcionários para outros trabalhos pela distancia ou só pela falta desse beneficio e o custo do passe transporrte
 
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
