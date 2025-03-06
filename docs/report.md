@@ -55,9 +55,9 @@ explicitamente se o aluno tiver autorização para tal.
 O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
-você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar 
-no seu trabalho.
+- Analisar os dados e por meio deles obter os benefícios de fazer os funcionários voltarem a trabalhar 100% presencialmente com a intenção de se obter maior lucro, sendo esses dados calculados pela produtividade individual e em grupo
+
+- Analisar os dados e por meio deles obter as desvantagens de realizar essa mudança como a mudança de certos funcionários para outros trabalhos pela distancia ou só pela falta desse beneficio e o custo do passe transporrte
 
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
@@ -78,15 +78,7 @@ específicos ou as razões para aprofundar em certos aspectos do software.
 
 
 ##    Público alvo
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. 
-O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários 
-na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos 
-usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
-diagramas de personas e mapa de stakeholders.
+Os CEOS e chefes de empresas que possuam departamento de informática e desejam misturar home office com trabalho presencial ou queiram optar apenas por um dos dois. 
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
