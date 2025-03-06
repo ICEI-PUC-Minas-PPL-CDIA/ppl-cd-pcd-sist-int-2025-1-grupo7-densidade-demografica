@@ -1,7 +1,7 @@
-# Nome do projeto
+# Análise de transferência de emprego por enforcamento de trabalho presencial
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando que o objeto é desenvolver um sistema inteligente. Você deve mencionar o produto que está sendo desenvolvido, e não o que se espera obter com este produto.
-
+   O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
+   Isso seria feito para que as empressas consigam analisar os beneficios de fazer seus funcionario trabalharem remotamente onde podem ser monitorados e considerar as desvantagens que essa mudança iria trazer por meio de um sistema inteligente.
 ## Integrantes
 
 * Ian Vinicius Marinho Malta
