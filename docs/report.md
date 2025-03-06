@@ -79,15 +79,7 @@ específicos ou as razões para aprofundar em certos aspectos do software.
 
 
 ##    Público alvo
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. 
-O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários 
-na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos 
-usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
-diagramas de personas e mapa de stakeholders.
+Os CEOS e chefes de empresas que possuam departamento de informática e desejam misturar home office com trabalho presencial ou queiram optar apenas por um dos dois. 
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
