@@ -29,7 +29,7 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 ## Introdução
 
-A introdução deve apresentar de dois a quatro parágrafos de contextualização do trabalho. 
+Nos últimos anos, especialmente com a pandemia de 2020, a dinâmica do trabalho passou e continua passando por mudanças significativas. Devido à necessidade de isolamento social, muitas empresas adotaram o trabalho remoto como solução. No entanto, com o retorno à normalidade, surge o questionamento: é mais vantajoso para as organizações manter o trabalho remoto ou voltar completamente ao modelo presencial? 
 
 ###    Contextualização
 
