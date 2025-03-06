@@ -4,7 +4,7 @@ Este diretório mantém os artefatos relatório à modelagem de dados do projeto
 
 Os principais documentos a serem produzidos são:
 
-* `data_raw.csv`
+* `State_of_data_BR_2023_Kaggle - df_survey_2023.csv`
 	* base principal original. pode ser em qualquer formato tabular
 
 * `other_data_raw.csv`
