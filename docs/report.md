@@ -33,9 +33,7 @@ A introdução deve apresentar de dois a quatro parágrafos de contextualizaçã
 
 ###    Contextualização
 
-Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere. 
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas).
+Após o periodo da pandemia de 2020, muitas empresas tem duvidas se o trabalho remoto ainda é vantajoso para elas ou se elas devem voltar 100% presencial.
 
 ###    Problema
 
