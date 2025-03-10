@@ -9,6 +9,8 @@
 
 **Thales Ribeiro Melo, thales.melo@sga.pucminas.br**
 
+**Arthur Gabriel Marques Coelho Mourão, agmcmourao@sga.pucminas.br**
+
 ---
 
 **Prof. Hugo Bastos de Paula**
