@@ -1,4 +1,4 @@
-# Análise de transferência de emprego por enforcamento do trabalho presencial na área de ciencia de dados
+# Análise de densidade demografica de cientista de dados
 
 
 **Ian Vinicius Marinho Malta, ian.malta@sga.pucminas.br**
@@ -29,6 +29,8 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 ## Introdução
 
+
+
 Nos últimos anos, especialmente com a pandemia de 2020, a dinâmica do trabalho passou e continua passando por mudanças significativas. Devido à necessidade de isolamento social, muitas empresas adotaram o trabalho remoto como solução. No entanto, com o retorno à normalidade, surge o questionamento: é mais vantajoso para as organizações manter o trabalho remoto ou voltar completamente ao modelo presencial? 
 
 ###    Contextualização
@@ -37,7 +39,6 @@ Após o periodo da pandemia de 2020, muitas empresas tem duvidas se o trabalho r
 
 ###    Problema
 
-Possível grande número de saída de funcionários por causa da mudança do modo de trabalho remoto/híbrido para 100% presencial.
 
 
 > **Links Úteis**:
