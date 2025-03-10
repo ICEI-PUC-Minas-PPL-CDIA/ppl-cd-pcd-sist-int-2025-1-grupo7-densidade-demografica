@@ -6,7 +6,7 @@
 
 * Ian Vinicius Marinho Malta
 * João Gabriel de Melo Neves
-* Beatriz Azevedo dos Santos
+* Thiago Couto Ferreira
 * Thales Ribeiro Melo
 
 ## Professor
