@@ -8,6 +8,7 @@
 * João Gabriel de Melo Neves
 * Thiago Couto Ferreira
 * Thales Ribeiro Melo
+* Arthur Gabriel Marques Coelho Mourão
 
 ## Professor
 
