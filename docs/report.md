@@ -52,9 +52,9 @@ Após o periodo da pandemia de 2020, muitas empresas tem duvidas se o trabalho r
 O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
-- Analisar os dados e por meio deles obter os benefícios de fazer os funcionários voltarem a trabalhar 100% presencialmente com a intenção de se obter maior lucro, sendo esses dados calculados pela produtividade individual e em grupo
+- Analisar os dados e por meio deles obter informações sobre a demanda do curso nos estados do Brasil, sendo esse importante para o planejamento do local em que as novas empresas serão melhor alocadas.
 
-- Analisar os dados e por meio deles obter as desvantagens de realizar essa mudança como a mudança de certos funcionários para outros trabalhos pela distancia ou só pela falta desse beneficio e o custo do passe transporrte
+- Analisar os dados e por meio deles obter informações sobre o número de faculdades que atendem a Ciência de Dados nos estados do Brasil, de tal forma a ser importante para a implementação de tal nas regiões que ainda não se efetivou o curso em suas faculdades.
 
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
