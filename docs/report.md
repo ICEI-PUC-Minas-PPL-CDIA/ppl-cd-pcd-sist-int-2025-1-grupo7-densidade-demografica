@@ -52,7 +52,7 @@ Após o periodo da pandemia de 2020, muitas empresas tem duvidas se o trabalho r
 O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
 ####    Objetivos específicos
 
-- Analisar os dados e por meio deles obter informações sobre a demanda do curso nos estados do Brasil, sendo esse importante para o planejamento do local em que as novas empresas serão melhor alocadas.
+- Analisar os dados e por meio deles obter informações sobre a demanda do curso Ciência de dados nos estados do Brasil, sendo esse importante para o planejamento do local em que as novas empresas dessa área serão melhor alocadas.
 
 - Analisar os dados e por meio deles obter informações sobre o número de faculdades que atendem a Ciência de Dados nos estados do Brasil, de tal forma a ser importante para a implementação de tal nas regiões que ainda não se efetivou o curso em suas faculdades.
 
@@ -65,7 +65,7 @@ O objetivo desse projeto é analisar uma serie de dados relacionados aos funcion
 Mostre também as **justificativas** para o  desenvolvimento do seu trabalho e, caso deseje, 
 destaque alguma contribuição do trabalho.
 
-A justific ativa deve descrever a importância ou a motivação para o desenvolvimento do 
+A justificativa deve descrever a importância ou a motivação para o desenvolvimento do 
 sistema inteligente escolhido. Indique as razões pelas quais você escolheu seus objetivos 
 específicos ou as razões para aprofundar em certos aspectos do software.
 
