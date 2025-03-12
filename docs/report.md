@@ -37,8 +37,7 @@ Nos últimos anos, especialmente com a pandemia de 2020, a dinâmica do trabalho
 
 ###    Contextualização
 
-Após o periodo da pandemia de 2020, muitas empresas tem duvidas se o trabalho remoto ainda é vantajoso para elas ou se elas devem voltar 100% presencial.
-
+Com o aumento da competição por forca de trabalho vem se vendo uma maior dificuldade para a obtenção de trabalhadores qualificados, em que as empresas tentam entrar em certo local para começar mas sem a quantidade necessária ocorrem diversos problemas e a empresa perde possiveis lucros.
 ###    Problema
 
 
