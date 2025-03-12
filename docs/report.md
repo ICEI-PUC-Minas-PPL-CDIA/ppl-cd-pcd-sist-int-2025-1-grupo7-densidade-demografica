@@ -33,7 +33,7 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 
 
-Com o crescimento e procura da área de Ciência de Dados existe uma necessidade das empresas de localizar onde estão esses profissionais e quais são suas qualificações. Portanto, nossa empresa visa justamente isso: que o empregador saiba onde localizá-los e quais lugares têm a melhor qualificação.
+Com o crescimento e procura da área de Ciência de Dados surge uma necessidade das empresas de localizar onde estão esses profissionais e quais são suas qualificações. Portanto, nossa empresa visa justamente isso: que o empregador saiba onde localizá-los e quais lugares têm a melhor qualificação.
 
 ###    Contextualização
 
