@@ -33,7 +33,7 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 
 
-Nos últimos anos, especialmente com a pandemia de 2020, a dinâmica do trabalho passou e continua passando por mudanças significativas. Devido à necessidade de isolamento social, muitas empresas adotaram o trabalho remoto como solução. No entanto, com o retorno à normalidade, surge o questionamento: é mais vantajoso para as organizações manter o trabalho remoto ou voltar completamente ao modelo presencial? 
+Com o crescimento e procura da área de Ciência de Dados existe uma necessidade das empresas de localizar onde estão esses profissionais e quais são suas qualificações. Portanto, nossa empresa visa justamente isso: que o empregador saiba onde localizá-los e quais lugares têm a melhor qualificação.
 
 ###    Contextualização
 
