@@ -51,7 +51,7 @@ Um problema que pode apresentar-se ao criar uma empresa que necessita de cientis
 
 ###    Objetivo geral
 
-O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
+Desenvolver um sistema inteligente para mostrar geograficamente a densidade de cientistas de dados por municipio e indicar quais municipios estão saturados para que empresas tenham uma maior facilidade de contratar cientistas de dados ao abrirem suas empresas.
 
 ####    Objetivos específicos
 
