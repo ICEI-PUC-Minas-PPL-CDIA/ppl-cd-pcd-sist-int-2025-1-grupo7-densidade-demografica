@@ -37,10 +37,13 @@ Com o crescimento e procura da área de Ciência de Dados surge uma necessidade 
 
 ###    Contextualização
 
+
 Com o aumento da competição por forca de trabalho vem se vendo uma maior dificuldade para a obtenção de trabalhadores qualificados, em que as empresas tentam entrar em certo local para começar mas sem a quantidade necessária ocorrem diversos problemas e a empresa perde possiveis lucros.
+
 ###    Problema
 
 
+Um problema que pode apresentar-se ao criar uma empresa que necessita de cientistas de dados é a falta de profissionais qualificados. Uma empresa sem esses profissionais pode perder muito de seu lucro por falta de pesquisas que avaliem como a empresa deve agir. 
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -49,6 +52,7 @@ Com o aumento da competição por forca de trabalho vem se vendo uma maior dific
 ###    Objetivo geral
 
 O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
+
 ####    Objetivos específicos
 
 - Analisar os dados e por meio deles obter informações sobre a demanda do curso Ciência de dados nos estados do Brasil, sendo esse importante para o planejamento do local em que as novas empresas dessa área serão melhor alocadas.
