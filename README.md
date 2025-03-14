@@ -1,7 +1,7 @@
 # Análise de densidade demografica de cientista de dados
 
-   O objetivo desse projeto é analisar uma serie de dados relacionados aos funcionarios de uma empresa para obter os pros e contras de mudar o sistema de trabalho dos funcionarios de trabalho remoto para o presencial.
-   Isso seria feito para que as empressas consigam analisar os beneficios de fazer seus funcionario trabalharem remotamente onde podem ser monitorados e considerar as desvantagens que essa mudança iria trazer por meio de um sistema inteligente.
+   Desenvolver um sistema inteligente para mostrar geograficamente a densidade de cientistas de dados por municipio e indicar quais municipios estão saturados para que empresas tenham uma maior facilidade de contratar cientistas de dados ao abrirem suas empresas.
+   Isso seria feito para que as empressas consigam analisar os beneficios (como facilidade de contratar cientistas de dados) de determinadas areas e em quais lugares eles devem abrir suas empresas.
 ## Integrantes
 
 * Ian Vinicius Marinho Malta
