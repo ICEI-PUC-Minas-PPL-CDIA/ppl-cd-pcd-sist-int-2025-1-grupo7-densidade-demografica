@@ -63,14 +63,11 @@ Desenvolver um sistema inteligente para mostrar geograficamente a densidade de c
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 
-###    Justificativas
+###    Justificativas  
 
-Mostre também as **justificativas** para o  desenvolvimento do seu trabalho e, caso deseje, 
-destaque alguma contribuição do trabalho.
+A crescente demanda por profissionais de Ciência de Dados tem impulsionado empresas a buscarem maneiras mais eficientes de localizar esses especialistas e compreender suas qualificações. Entretanto, a falta de informações geográficas consolidadas sobre a distribuição desses profissionais dificulta o planejamento estratégico das organizações que desejam contratar ou expandir suas operações.  
 
-A justificativa deve descrever a importância ou a motivação para o desenvolvimento do 
-sistema inteligente escolhido. Indique as razões pelas quais você escolheu seus objetivos 
-específicos ou as razões para aprofundar em certos aspectos do software.
+Diante desse cenário, este projeto se justifica pela necessidade de um sistema inteligente que permita visualizar a densidade de cientistas de dados por município, identificando regiões com maior ou menor oferta desses profissionais. Além disso, compreender a relação entre a presença de cursos de Ciência de Dados e a disponibilidade de especialistas qualificados pode auxiliar tanto na alocação de empresas quanto no incentivo à criação de novos cursos em regiões menos atendidas.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
