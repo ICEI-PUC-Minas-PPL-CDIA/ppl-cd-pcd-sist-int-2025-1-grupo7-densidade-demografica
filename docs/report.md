@@ -75,8 +75,7 @@ Diante desse cenário, este projeto se justifica pela necessidade de um sistema 
 
 
 ##    Público alvo
-Os CEOS e chefes de empresas que possuam departamento de informática e desejam misturar home office com trabalho presencial ou queiram optar apenas por um dos dois. 
-
+Os CEOS e chefes de empresas novas na área de Ciencia de Dados, de tal forma a auxiliar essas novas empresas a iniciarem sua trajetória procurando profissionais qualificados e um município propenso para tal atividade.
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
 > - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
