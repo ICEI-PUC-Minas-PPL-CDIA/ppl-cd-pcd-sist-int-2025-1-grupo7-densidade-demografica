@@ -131,7 +131,7 @@ uma fonte para enriquecimentos dos dados principais.
 
 ###    Descrição de dados
 
-Dados Quantitativos:
+**Dados Quantitativos:**
 
 • Gênero 
 
@@ -145,7 +145,7 @@ Dados Quantitativos:
 
 • Raça/Etnia/Cor
 
-Dados Qualitativos:
+**Dados Qualitativos:**
 
 • Ciêntistas por Região
 
@@ -157,7 +157,7 @@ Dados Qualitativos:
 
 • Área de Formação (em qual curso o usuário se formou)
 
-1- Gênero
+**1- Gênero**
 
 Moda: Masculino(3975)
 
@@ -171,7 +171,7 @@ preferiu não informar: 0.3%
 
 outros: 0.2%
 
-2- Faixa Etária
+**2- Faixa Etária**
 
 Moda: 25-29(1654)
 
@@ -195,7 +195,7 @@ Moda: 25-29(1654)
 
 mais que 55: 1.4%
 
-3- Faixa Salarial
+**3- Faixa Salarial**
 
 Moda: 6.001-12.000(1663)
 
@@ -214,7 +214,7 @@ menos que 1.000: 0.6%
 
 mais que 20.001: 10.1%
 
-4- Nível de experiência
+**4- Nível de experiência**
 
 Moda: 4 a 6 anos(1300)
 
@@ -231,7 +231,7 @@ mais que 6 anos: 17.1%
 
 não possui experiência: 12.1%
 
-5- Ciêntista por Estado
+**5- Ciêntista por Estado**
 
 Moda: São Paulo(SP)(2072)
 
@@ -241,7 +241,7 @@ Moda: São Paulo(SP)(2072)
 
 ![image](https://github.com/user-attachments/assets/da214e89-25be-4d53-97d4-b496e306be1c)
 
-6- Raça/Etnia/Cor
+**6- Raça/Etnia/Cor**
 
 Moda: Branca(3414)
 
@@ -258,7 +258,7 @@ preferiu não informar: 0.6%
 
 outra: 0.3%
 
-7- Ciêntistas por Região
+**7- Ciêntistas por Região**
 
 Moda: Sudeste(3172)
 
@@ -275,7 +275,7 @@ Norte: 1.6%
 
 Vazio(não identificado): 2.3%
 
-8- Nível de Ensino
+**8- Nível de Ensino**
 
 Moda: Graduação/Bacharelado(2476)
 
@@ -292,7 +292,7 @@ sem graduação: 2%
 
 outros: 0.1%
 
-9- Situação Empresarial
+**9- Situação Empresarial**
 
 Moda: Empregado(CLT)(4159)
 
@@ -309,7 +309,7 @@ Servidor Público: 2.8%
 
 outros: 5.7%
 
-10- Cargo
+**10- Cargo**
 
 Moda: Analista de dados(em geral)(1858)
 
@@ -326,7 +326,7 @@ Data Product Manager: 1.9%
 
 outros: 34%
 
-11- Área de Formação
+**11- Área de Formação**
 
 Moda: Computação/TI/ Engenharia de software(2153)
 
