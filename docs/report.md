@@ -132,6 +132,7 @@ uma fonte para enriquecimentos dos dados principais.
 ###    Descrição de dados
 
 Dados Quantitativos:
+
 • Gênero 
 
 • Faixa Etária
@@ -145,6 +146,7 @@ Dados Quantitativos:
 • Raça/Etnia/Cor
 
 Dados Qualitativos:
+
 • Ciêntistas por Região
 
 • Nível de Ensino (o grau de ensino que os usuários possuem)
@@ -158,6 +160,7 @@ Dados Qualitativos:
 1- Gênero
 
 Moda: Masculino(3975)
+
 ![image](https://github.com/user-attachments/assets/c39e1b22-d724-44a0-8c61-640407b89423)
 
 Masculino: 75.1%
@@ -171,6 +174,7 @@ outros: 0.2%
 2- Faixa Etária
 
 Moda: 25-29(1654)
+
 ![image](https://github.com/user-attachments/assets/e54e0435-dbd0-4628-abf3-7c577cbf22f7)
 
 17-21: 3.4%
@@ -194,6 +198,7 @@ mais que 55: 1.4%
 3- Faixa Salarial
 
 Moda: 6.001-12.000(1663)
+
 ![image](https://github.com/user-attachments/assets/98c6c4c9-0caf-44c5-993a-439508e01cfe)
 menos que 1.000: 0.6%
 
@@ -229,6 +234,7 @@ não possui experiência: 12.1%
 5- Ciêntista por Estado
 
 Moda: São Paulo(SP)(2072)
+
 ![image](https://github.com/user-attachments/assets/d38c9611-6938-429f-9be8-64bb357318c3)
 
 ![image](https://github.com/user-attachments/assets/f31e79e1-9725-4526-8b99-c7511fb27595)
@@ -255,6 +261,7 @@ outra: 0.3%
 7- Ciêntistas por Região
 
 Moda: Sudeste(3172)
+
 ![image](https://github.com/user-attachments/assets/f01648ae-98bb-43b3-a57a-745877ce81f2)
 Sudeste: 59.9%
 
@@ -288,6 +295,7 @@ outros: 0.1%
 9- Situação Empresarial
 
 Moda: Empregado(CLT)(4159)
+
 ![image](https://github.com/user-attachments/assets/0c498987-8761-4c03-8225-d7f4f49229ba)
 Empregado(CLT): 78.6%
 
@@ -304,6 +312,7 @@ outros: 5.7%
 10- Cargo
 
 Moda: Analista de dados(em geral)(1858)
+
 ![image](https://github.com/user-attachments/assets/ff494eaa-fba2-4706-a4d4-8d507542aa96)
 Analista de Dados: 35.8%
 
@@ -320,6 +329,7 @@ outros: 34%
 11- Área de Formação
 
 Moda: Computação/TI/ Engenharia de software(2153)
+
 ![image](https://github.com/user-attachments/assets/ca57f7f1-46b1-4112-91fe-f055674ae0f5)
 Computação/TI/ Engenharia de software: 40.7%
 
