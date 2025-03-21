@@ -134,27 +134,18 @@ uma fonte para enriquecimentos dos dados principais.
 Dados Quantitativos:
 
 • Gênero 
-
 • Faixa Etária
-
 • Faixa Salarial (média que o usuário recebe por mês)
-
 • Nível de experiência (quantos anos o usuário possui na área)
-
 • Ciêntista por Estado
-
 • Raça/Etnia/Cor
 
 Dados Qualitativos:
 
 • Ciêntistas por Região
-
 • Nível de Ensino (o grau de ensino que os usuários possuem)
-
 • Situação Empresarial (situação atual do usuário diante o mercado de trabalho)
-
 • Cargo (tipo de cargo assumido)
-
 • Área de Formação (em qual curso o usuário se formou)
 
 1- Gênero
