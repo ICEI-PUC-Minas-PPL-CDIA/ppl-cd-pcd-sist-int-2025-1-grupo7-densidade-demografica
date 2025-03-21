@@ -134,6 +134,7 @@ uma fonte para enriquecimentos dos dados principais.
 Dados Quantitativos:
 
 • Gênero 
+
 • Faixa Etária
 
 • Faixa Salarial (média que o usuário recebe por mês)
