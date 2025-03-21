@@ -112,15 +112,9 @@ Os CEOS e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 | Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?                                              | Número bruto de funcionários que trablham na area de dados na empresa                         | Dados quantitativos discretos                         |
 | Cientista de Dados/Data Scientist                                                                                         | Se a pessoa é ou não cientista de dados                                                       | Tipos de dados qualitativos (binominais assimétricos) |
 | CO_CURSO                | Código identificador do curso                              | dados qualitativos polinomiais não ordinais |
-| LATITUDE                | Coordenada geográfica de latitude                          | Dados quantitativos contínuos               |
-| LONGITUDE               | Coordenada geográfica de longitude                         | Dados quantitativos contínuos               |
-| CO_MUNICIPIO            | Código identificador do município                          | Dados quantitativos discretos               |
+| &CO_MUNICIPIO            | Código identificador do município                          | Dados quantitativos discretos               |
 | NO_CURSO                | Nome do curso                                              | dados qualitativos                          |
-| CO_CINE_ROTULO          | Código da classificação do curso no CINE                   | dados qualitativos                          |
-| TP_GRAU_ACADEMICO       | Grau acadêmico do curso (Bacharelado, Licenciatura, etc.)  | dados polinomiais ordinais                  |
-| TP_MODALIDADE_ENSINO    | Modalidade do curso (Presencial, EAD, etc.)                | dados polinomiais ordinais                  |
 | TP_NIVEL_ACADEMICO      | Nível acadêmico do curso (Graduação, Pós-Graduação, etc.)  | dados polinomiais ordinais                  |
-| IN_MATERIAL_TATIL       | Indica se há material tátil disponível (Sim/Não)           | dados qualitativos binomiais assimétricos   |
 | IN_RECURSOS_COMUNICACAO | Indica se há recursos de comunicação disponíveis (Sim/Não) | dados qualitativos binomiais simétricos     |
 | IN_RECURSOS_INFORMATICA | Indica se há recursos de informática disponíveis (Sim/Não) | dados qualitativos binomiais assimétricos   |
 | RELAÇÃO                 | Código identificador de relação entre registros            | dados qualitativos                          |
