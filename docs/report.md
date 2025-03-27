@@ -292,6 +292,9 @@ Gráficos com 2 variáveis:
 
 <img src=https://github.com/user-attachments/assets/a13c7fe1-9ce7-4293-bf9e-dc35d787d6ed width="600"/>  
 
+- Age/Gender
+<img src=docs/imagens/Age:Gender.png width="600"/>
+
 ## Preparação dos dados
 
 A preparação dos dados consiste dos seguintes passos:
