@@ -149,6 +149,10 @@ uma fonte para enriquecimentos dos dados principais.
  • Cargo (tipo de cargo assumido)   
  • Área de Formação (em qual curso o usuário se formou)   
 
+**Número de pessoas que responderam (IDs)**
+
+- 5173
+
 **1- Gênero**
 
 - Moda: Masculino(3883)
