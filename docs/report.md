@@ -188,15 +188,14 @@ uma fonte para enriquecimentos dos dados principais.
 
 - Moda: 6.001-12.000(1640)
 
-<img src=https://github.com/user-attachments/assets/e713cfc6-da5b-498c-88a3-cda3b291ebc7 width="600"/>  
+<img src=https://github.com/user-attachments/assets/5756a64d-768c-4888-a291-3a0f3d1601e7 width="600"/>  
 
-- menos que 1.000: 0.5%  
-- 1.001-2.000: 4.2%  
-- 2.001-6.000: 27.0%  
-- 6.001-12.000: 32.2%  
-- 12.001-16.000: 12.5%  
-- 16.001-20.000: 6.2%  
-- mais que 20.001: 17.4%  
+- 0-2.000: 14.7%  
+- 2.001-6.000: 26.6%  
+- 6.001-12.000: 31.7%  
+- 12.001-16.000: 12.3%  
+- 16.001-20.000: 6.1%  
+- mais que 20.001: 8.5%  
 
 **4- Nível de experiência**
 
