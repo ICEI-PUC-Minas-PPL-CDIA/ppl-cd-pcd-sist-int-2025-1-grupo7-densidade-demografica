@@ -293,7 +293,7 @@ Gráficos com 2 variáveis:
 <img src=https://github.com/user-attachments/assets/a13c7fe1-9ce7-4293-bf9e-dc35d787d6ed width="600"/>  
 
 - Idade / Gênero
-<img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/main/docs/imagens/age-gender.png" width="600">
+<img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/AgeGender.png?raw=true" width="600">
 
 
 ## Preparação dos dados
