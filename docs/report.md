@@ -296,14 +296,17 @@ Moda: São Paulo(SP)(2073)
 
 Gráficos com 2 variáveis:   
 - Área de Formação / Faixa Salarial   
-
 <img src=https://github.com/user-attachments/assets/1b401f80-f989-4034-88d3-498519ba16d1 width="600"/>  
 
 - Idade / Gênero
-<img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/AgeGender.png?raw=true" width="600">
+<img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/AgeGender.png?raw=true" width="600">  
 
 - Nível de experiência / Cargo atual
 <img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/Graph Experience level by current position.png?raw=true" width="600">
+
+- Faixa Etária / Nível na Empresa
+<img src=https://github.com/user-attachments/assets/75502139-1ac6-42b6-b2a5-89d8c36346ba width="600">   
+
 
 
 ## Preparação dos dados
