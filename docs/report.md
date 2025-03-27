@@ -302,6 +302,9 @@ Gráficos com 2 variáveis:
 - Idade / Gênero
 <img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/AgeGender.png?raw=true" width="600">
 
+- Nível de experiência / Cargo atual
+<img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/Graph Experience level by current position.png?raw=true" width="600">
+
 
 ## Preparação dos dados
 
