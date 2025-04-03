@@ -47,7 +47,7 @@ Com o crescimento e procura da área de Ciência de Dados surge uma necessidade 
 ###    Problema
 
 
-Um problema que pode apresentar-se ao criar uma empresa que necessita de cientistas de dados é a falta de profissionais qualificados. Uma empresa sem esses profissionais pode perder muito de seu lucro por falta de pesquisas que avaliem como a empresa deve agir. 
+O avanço da tecnologia e da inteligência artificial tem impulsionado a demanda por profissionais qualificados na área de Ciência de Dados. No entanto, a distribuição desses profissionais pelo território brasileiro ainda não é homogênea, dificultando tanto a alocação estratégica de novas empresas quanto a oferta educacional adequada para formar especialistas nessa área.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
