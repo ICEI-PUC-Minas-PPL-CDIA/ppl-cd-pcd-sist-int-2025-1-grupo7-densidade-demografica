@@ -310,7 +310,14 @@ Gráficos com 2 variáveis:
 - Nível na Empresa / Salário
 <img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/Gr%C3%A1fico.png" width="600">
 
-
+- **Gráfico base auxiliar**      
+<img src=https://github.com/user-attachments/assets/08a5812f-1697-481a-add7-38c93b236c07 width="600">     
+ 
+Curso de Ciência de Dados por Estado (código)       
+- SP - 1521433; 1536760; 1538622; 1543013; 1545554; 1589553; 1599656; 1603036; 1618685; (9)    
+- MG - 1600504; (1)    
+- CE - 1127861; 1571410 (2)   
+- PB - 1550460; (1)    
 
 ## Preparação dos dados
 
