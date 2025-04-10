@@ -339,7 +339,7 @@ Na nossa análise da densidade demográfica de Cientistas de Dados, optamos por 
 | `Cargo`                    | Títulos de trabalho ocupados pelos cientistas, útil para entender a hierarquia e funções na área      | Categórico (nominal)       
 | `Área de Formação`         | Campos de estudo dos cientistas, importante para analisar a diversidade de formações na profissão     | Categórico (nominal)       |
  
-- `Base_Auxiliar.csv`   
+- `Auxiliary_data_courses`   
      
 | Atributo              | Motivos                                                                        |  Tipo de Dado  |
 |-----------------------|--------------------------------------------------------------------------------|----------------|
