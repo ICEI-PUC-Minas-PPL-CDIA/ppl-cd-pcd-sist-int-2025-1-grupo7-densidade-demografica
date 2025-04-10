@@ -98,8 +98,8 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 ## Análise exploratórida dos dados
 
 ###    Dicionário de dados
-
 **Main Data Base**
+
 | Data                                                                                                                      | Description                                                                                   | Data Type                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | Id                                                                                                                        | O número da identidade de cada pessoa que respondeu à pesquisa                                | Dados qualitativos (polinomial não ordinal)           |
@@ -124,17 +124,18 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 | Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? | Quanto tempo a pessoa tem em outras áreas que contribuem para a atuação com dados             | Dados qualitativos (polinomial não ordinal)           |
 | Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?                                              | Número de funcionários que trabalham com dados na empresa                                     | Dados quantitativos (discretos)                       |
 | Cientista de Dados/Data Scientist                                                                                         | Se a pessoa é ou não cientista de dados                                                       | Dados qualitativos (binomial assimétrico)             |
-| Quantidade de Cursos no estado onde mora                                                                                         | A quantidade de cursos de ciência de dados que tem na UF da pessoa                                                      | Dados qualitativos (discretos)            |
-**Auxiliary Data Base**
-| Data             | Description                                                                                   | Data Type                                       |
-|------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| CO_CURSO         | Código identificador do curso                                                                 | Dados qualitativos (polinomial não ordinal)     |
-| UF    	   | Nome da UF onde a pessoa mora                                                           	   | Dados quantitativos (discretos)                 |
-| NO_CURSO         | Nome do curso                                                                                 | Dados qualitativos (polinomial não ordinal)     |
-| TP_GRAU_ACADEMICO | Identifica o grau acadêmico do curso (ex.: Bacharelado, Licenciatura, Tecnológico), com base em um código numérico. | Dados qualitativos (polinomial ordinal)         |
-| CO_CINE_ROTULO      | Código que representa a área de conhecimento do curso segundo a Classificação Internacional da Educação (CINE/ISCED). | Dados qualitativos (polinomial não ordinal)     |
-| TP_NIVEL_ACADEMICO | Representa o nível de formação acadêmica do curso (ex.: Graduação, Mestrado, Doutorado), codificado numericamente. | Dados qualitativos (polinomial ordinal) |
+| Quantidade de Cursos no estado onde mora                                                                                  | A quantidade de cursos de ciência de dados que tem na UF da pessoa                            | Dados quantitativos (discretos)                       |
 
+**Auxiliary Data Base**
+
+| Data               | Description                                                                                   | Data Type                                       |
+|--------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------|
+| CO_CURSO           | Código identificador do curso                                                                 | Dados qualitativos (polinomial não ordinal)     |
+| UF                 | Nome da UF onde a pessoa mora                                                                 | Dados qualitativos (polinomial não ordinal)     |
+| NO_CURSO           | Nome do curso                                                                                 | Dados qualitativos (polinomial não ordinal)     |
+| TP_GRAU_ACADEMICO  | Identifica o grau acadêmico do curso (ex.: Bacharelado, Licenciatura, Tecnológico), com base em um código numérico. | Dados qualitativos (polinomial ordinal)         |
+| CO_CINE_ROTULO     | Código que representa a área de conhecimento do curso segundo a Classificação Internacional da Educação (CINE/ISCED). | Dados qualitativos (polinomial não ordinal)     |
+| TP_NIVEL_ACADEMICO | Representa o nível de formação acadêmica do curso (ex.: Graduação, Mestrado, Doutorado), codificado numericamente. | Dados qualitativos (polinomial ordinal)         |
 
 
 ###    Descrição de dados
