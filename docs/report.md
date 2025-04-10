@@ -99,6 +99,7 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 
 ###    Dicionário de dados
 
+**Main Data Base**
 | Data                                                                                                                      | Description                                                                                   | Data Type                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | Id                                                                                                                        | O número da identidade de cada pessoa que respondeu à pesquisa                                | Dados qualitativos (polinomial não ordinal)           |
@@ -123,16 +124,15 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 | Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? | Quanto tempo a pessoa tem em outras áreas que contribuem para a atuação com dados             | Dados qualitativos (polinomial não ordinal)           |
 | Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?                                              | Número de funcionários que trabalham com dados na empresa                                     | Dados quantitativos (discretos)                       |
 | Cientista de Dados/Data Scientist                                                                                         | Se a pessoa é ou não cientista de dados                                                       | Dados qualitativos (binomial assimétrico)             |
+| Quantidade de Cursos no estado onde mora                                                                                         | A quantidade de cursos de ciência de dados que tem na UF da pessoa                                                      | Dados qualitativos (discretos)            |
+**Auxiliary Data Base**
+| Data                                                                                                                      | Description                                                                                   | Data Type                                             |
+|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | CO_CURSO                                                                                                                  | Código identificador do curso                                                                 | Dados qualitativos (polinomial não ordinal)           |
 | &CO_MUNICIPIO                                                                                                             | Código identificador do município                                                             | Dados quantitativos (discretos)                       |
 | NO_CURSO                                                                                                                  | Nome do curso                                                                                 | Dados qualitativos (polinomial não ordinal)           |
-| TP_NIVEL_ACADEMICO                                                                                                        | Nível acadêmico do curso (Graduação, Pós-Graduação, etc.)                                     | Dados qualitativos (polinomial ordinal)               |
-| IN_RECURSOS_COMUNICACAO                                                                                                   | Indica se há recursos de comunicação disponíveis (Sim/Não)                                   | Dados qualitativos (binomial simétrico)               |
-| IN_RECURSOS_INFORMATICA                                                                                                   | Indica se há recursos de informática disponíveis (Sim/Não)                                   | Dados qualitativos (binomial assimétrico)             |
+| TP_NIVEL_ACADEMICO                                                                                                        | Nível acadêmico do curso (Graduação, Pós-Graduação, etc.)                                     | Dados qualitativos (polinomial ordinal)               |        |
 | RELAÇÃO                                                                                                                   | Código identificador de relação entre registros                                               | Dados qualitativos (polinomial não ordinal)           |
-
-Este projeto deve utilizar pelo menos duas fontes de dados. Uma fonte principal e 
-uma fonte para enriquecimentos dos dados principais.
 
 
 ###    Descrição de dados
