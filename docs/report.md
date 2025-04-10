@@ -344,8 +344,6 @@ Na nossa análise da densidade demográfica de Cientistas de Dados, optamos por 
 | Atributo              | Motivos                                                                        |  Tipo de Dado  |
 |-----------------------|--------------------------------------------------------------------------------|----------------|
 | `CO_CURSO`              | Importante para identificar a formação acadêmica dos profissionais na área   |  Numérico |
-| `LATITUDE`              | Essencial para mapear a distribuição geográfica dos Cientistas de Dados      |  Numérico |
-| `LONGITUDE`             | Complementa a latitude para a localização precisa dos profissionais          |  Numérico |
 | `CO_MUNICIPIO`         | Relevante para analisar a concentração de Cientistas de Dados em diferentes regiões        |  Numérico |
 | `NO_CURSO`              | Identificar as formações mais comuns entre os Cientistas de Dados            | Categórico (nominal) |
 | `CO_CINE_ROTULO`        | Categorizar dados em análises mais complexas                                 | Numérico |
