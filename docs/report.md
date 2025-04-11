@@ -294,6 +294,9 @@ Gráficos com 2 variáveis:
 - Nível na Empresa / Salário
 <img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-2025-1/blob/main/docs/imagens/Gr%C3%A1fico.png" width="600">
 
+- Área de formação Cientistas de Dados
+<img src="https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/main/docs/imagens/Gr%C3%A1fico%2002.png" width="850">
+
 - **Gráfico base auxiliar**      
 <img src=https://github.com/user-attachments/assets/08a5812f-1697-481a-add7-38c93b236c07 width="600">     
  
