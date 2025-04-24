@@ -125,29 +125,51 @@ Main Data Base
 **Dados Quantitativos:**
 
  • Idade
+ 
  • Número de Funcionários
+ 
  • Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?
+ 
  • Quantidade de Cursos no estado onde mora
+ 
 **Dados Qualitativos:**
 
  • Id
+ 
  • Faixa idade
+ 
  • Gênero
+ 
  • Cor/raça/etnia
+ 
  • PCD
+ 
  • Vive no Brasil
+ 
  • Estado onde mora
+ 
  • UF onde mora
+ 
  • Região onde Mora
+ 
  • Nível de Ensino
+ 
  • Área de Formação
+ 
  • Qual sua situação atual de trabalho?
+ 
  • Setor
+ 
  • Cargo Atual
+ 
  • Nível
+ 
  • Faixa salarial
+ 
  • Quanto tempo de experiência na área de dados você tem?
+ 
  • Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados?
+ 
  • Cientista de Dados/Data Scientist
 
 **Número de pessoas que responderam (IDs)**
@@ -158,10 +180,14 @@ Main Data Base
 **Dados Qualitativos:**
 
  • CO_CURSO (Código identificador do curso)
+ 
  • UF (Nome da UF onde a pessoa mora)
+ 
  • NO_CURSO (Nome do curso)
+ 
  • TP_GRAU_ACADEMICO (Identifica o grau acadêmico do curso)
  • CO_CINE_ROTULO (Código que representa a área de conhecimento do curso segundo a Classificação Internacional da Educação (CINE/ISCED).)
+ 
  • TP_NIVEL_ACADEMICO (Representa o nível de formação acadêmica do curso)
 
 **1- Gênero**
