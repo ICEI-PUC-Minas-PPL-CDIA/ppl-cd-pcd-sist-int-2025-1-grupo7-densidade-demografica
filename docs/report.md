@@ -120,26 +120,49 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 
 
 ###    Descrição de dados
+
+Main Data Base
 **Dados Quantitativos:**
 
- • Gênero  
- • Faixa Etária  
- • Faixa Salarial (média que o usuário recebe por mês)  
- • Nível de experiência (quantos anos o usuário possui na área)   
- • Ciêntista por Estado   
- • Raça/Etnia/Cor   
-
+ • Idade
+ • Número de Funcionários
+ • Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?
+ • Quantidade de Cursos no estado onde mora
 **Dados Qualitativos:**
 
- • Ciêntistas por Região  
- • Nível de Ensino (o grau de ensino que os usuários possuem)  
- • Situação Empresarial (situação atual do usuário diante o mercado de trabalho)  
- • Cargo (tipo de cargo assumido)   
- • Área de Formação (em qual curso o usuário se formou)   
+ • Id
+ • Faixa idade
+ • Gênero
+ • Cor/raça/etnia
+ • PCD
+ • Vive no Brasil
+ • Estado onde mora
+ • UF onde mora
+ • Região onde Mora
+ • Nível de Ensino
+ • Área de Formação
+ • Qual sua situação atual de trabalho?
+ • Setor
+ • Cargo Atual
+ • Nível
+ • Faixa salarial
+ • Quanto tempo de experiência na área de dados você tem?
+ • Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados?
+ • Cientista de Dados/Data Scientist
 
 **Número de pessoas que responderam (IDs)**
 
 - 5173
+
+Main Data Base
+**Dados Qualitativos:**
+
+ • CO_CURSO (Código identificador do curso)
+ • UF (Nome da UF onde a pessoa mora)
+ • NO_CURSO (Nome do curso)
+ • TP_GRAU_ACADEMICO (Identifica o grau acadêmico do curso)
+ • CO_CINE_ROTULO (Código que representa a área de conhecimento do curso segundo a Classificação Internacional da Educação (CINE/ISCED).)
+ • TP_NIVEL_ACADEMICO (Representa o nível de formação acadêmica do curso)
 
 **1- Gênero**
 
