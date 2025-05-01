@@ -445,13 +445,58 @@ Foi criado um diagrama simples que mostra as etapas do processo, desde o carrega
 - **Gráfico informativo:**   
 Para finalizar é gerado um gráfico de barras empilhadas, o qual fornece uma visão clara da distribuição demográfica, facilitando a identificação de regiões com maior ou menor concentração de profissionais em diferentes faixas.   
 
-### Modelo 2: Algoritmo
+### Modelo 2: Transformação de dados
 
-Repita os passos anteriores para o segundo modelo.
+- **Perguntada Orientada a Dados:** Qual a densidade demográfica de cientistas de dados pelo Brasil?
+Em qual região existem profissionais mais qualificados? (junior, pleno, senior)      
+- **Justificativa da escolha do modelo:**  
+Utilizamos um modelo de transformação de dados baseado em agregações, filtragens e enriquecimento de dados externos (população por estado via IBGE) para responder às perguntas sobre densidade demográfica e qualificação de Cientistas de Dados no Brasil. Essa abordagem é especialmente apropriada quando o objetivo é consolidar informações dispersas em um formato analítico estruturado, possibilitando comparações entre regiões e faixas de perfil profissional. Por exemplo, partimos de uma base que continha cargos, estados e percepções de senioridade, mas esses dados brutos não indicavam diretamente onde havia maior densidade ou qualificação de profissionais. Assim, aplicamos transformações como: Filtragem condicional para isolar profissionais que se identificam ou atuam como Cientistas de Dados; Classificação por senioridade percebida para separar grupos “qualificados” (pleno/sênior) dos demais; Junção com dados populacionais externos para calcular uma métrica de densidade (número de Cientistas de Dados por 100 mil habitantes), padronizando comparações entre estados de tamanhos distintos; Agregações por estado e cálculo de proporções qualificadas para derivar insights sobre a distribuição e experiência desses profissionais.
 
+- **Processo de amostragem de dados:**
+Embora o modelo utilizado não seja de aprendizado supervisionado, aplicamos um processo de amostragem filtrada e particionamento lógico com os seguintes objetivos:
+	1 Filtragem Semântica:
 
-## Resultados
+	- Isolamos apenas os registros em que o participante se identifica como “Cientista de Dados” ou atua dessa forma.
 
+	- Isso garante que a amostra seja coerente com o objetivo da análise: estudar a densidade e qualificação de Cientistas de Dados no Brasil.
+   
+	2 Particionamento por Estado e Senioridade:
+	- Após o filtro, os dados foram particionados por estado de residência e por percepção de senioridade, permitindo cálculos agregados regionais.
+
+	3 Validação por Amostragem Mínima (quasi cross-validation):
+  	- Estados com menos de 5 registros foram excluídos da análise percentual de qualificação, para evitar vieses por amostra pequena — uma forma de validação implícita.
+ 
+- **Parâmetros Utilizados:**
+| Parâmetro              | Valor/Condição                                                                        |  Justificativa  |
+
+| Parâmetro              | Valor e Condição                                                                        |  Justificativa  |
+|-----------------------|--------------------------------------------------------------------------------|----------------|
+| `Filtro por cargo/atuação` | str.contains("cientista de dados")   |  Garante foco em profissionais relevantes |
+| `Senioridade considerada`  | "0.0" (pleno/sênior), "1.0" (júnior/iniciante)        | Baseado na codificação da base original |
+| `Amostra mínima por estado`| ≥ 5 registros            | Para confiabilidade estatística |
+| `População externa (IBGE)` | População por estado (2023)               | 	Necessária para cálculo de densidade demográfica |
+| `Métrica de densidade`    | # profissionais / população * 100.000       | Padronização entre estados com populações diferentes |
+
+- **Trechos de Código Comentados:**
+# 1. Filtro para selecionar apenas cientistas de dados
+mask_cientistas = df["cargo_atual"].str.contains("cientista de dados", case=False, na=False) | \
+df["atuacao_percebida"].str.contains("cientista de dados", case=False, na=False)
+df_cientistas = df[mask_cientistas]
+	- Isola os profissionais que efetivamente atuam como Cientistas de Dados.
+
+# 2. Agrupamento por estado
+cientistas_por_estado = df_cientistas["estado"].value_counts()
+	- Conta quantos profissionais atuam em cada estado.
+
+# 3. Agrupamento por senioridade (pleno/sênior vs. júnior)
+df_senioridade = df_cientistas[df_cientistas["senioridade_percebida"].notna()]
+senioridade_por_estado = df_senioridade.groupby(["estado", "senioridade_percebida"]).size().unstack(fill_value=0)
+	- Cria uma matriz com estados e contagem por tipo de senioridade.
+
+# 4. Cálculo da densidade proporcional à população
+df_densidade = cientistas_por_estado.to_frame(name="Qtd Cientistas").join(pd.Series(populacao_estimada, name="População"))
+df_densidade["Densidade por 100 mil hab"] = (df_densidade["Qtd Cientistas"] / df_densidade["População"]) * 100_000
+	- Normaliza a contagem de profissionais pela população, possibilitando comparação justa entre estados.
 ### Resultados obtidos com o modelo 1.
 
 Apresente aqui os resultados obtidos com a indução do modelo 1. 
