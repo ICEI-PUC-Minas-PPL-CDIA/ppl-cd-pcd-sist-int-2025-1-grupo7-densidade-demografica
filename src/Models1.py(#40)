@@ -78,7 +78,7 @@ def processar_regras(df_dados):
     te = TransactionEncoder()
     te_ary = te.fit(dataset).transform(dataset)
     df_transformed = pd.DataFrame(te_ary, columns=te.columns_)
-    frequent_itemsets = apriori(df_transformed, min_support=0.4, use_colnames=True)
+    frequent_itemsets = apriori(df_transformed, min_support=0.07, use_colnames=True)
     regras = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.7)
     return regras
 
