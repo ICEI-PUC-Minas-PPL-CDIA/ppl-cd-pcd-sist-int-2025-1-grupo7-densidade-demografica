@@ -13,7 +13,7 @@ Filtred_filename = list(uploaded_Filtred.keys())[0]
 print(f"\nArquivo '{Filtred_filename}' carregado.")
 
 # Carregar os dados
-df = pd.read_csv(Filtred_filename, encoding='latin-1')  
+df = pd.read_csv(Filtred_filename, encoding='latin-1', delimiter=';')
 
 print(df.head())
 
@@ -67,14 +67,14 @@ dataset_demografico = [
     ['Centro-Oeste', 'mais que 55', 'mais que 20.001'],
 ]
 
-df_demografico = pd.DataFrame(dataset_demografico, columns=['Região', 'Faixa Etária', 'Faixa Salarial'])
+df_demografico = df[['Região', 'Faixa Etária', 'Faixa Salarial']]
 
 # Dividir os dados em treino e teste (por exemplo, 70% treino, 30% teste)
 train_df, test_df = train_test_split(df_demografico, test_size=0.3, random_state=42)
 
 # Função para processar os dados e gerar regras
 def processar_regras(df_dados):
-    dataset = df_dados.drop('Região', axis=1).values.tolist()
+    dataset = df_dados.drop('Região', axis=1).astype(str).values.tolist()  
     te = TransactionEncoder()
     te_ary = te.fit(dataset).transform(dataset)
     df_transformed = pd.DataFrame(te_ary, columns=te.columns_)
