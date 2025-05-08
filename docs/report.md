@@ -402,9 +402,9 @@ Por outro lado, identificamos que os demais atributos não contribuíram de mane
 
 ## Indução de modelos  
 
-### Modelo 1: Regra de Associação   
+### Modelo 1: Árvore de Decisão 
 
-- **Perguntada Orientada a Dados:** Existem regiões específicas onde certos atributos demográficos como Faixa Etária e Faixa Salarial são mais comuns entre os Cientistas de Dados?       
+- **Perguntada Orientada a Dados:** Quais atributos definem o nível de trabalho dos Cientistas de dados em diferentes estados?**       
 - **Justificativa da escolha do modelo:**               
 Utilizamos o modelo de Associação com algoritmo Apriori para identificar regras de correlação nos dados de densidade demográfica. Com objetivo, de descobrir padrões frequentes e relações entre atributos, como região, renda e faixa de idade, no qual o objetivo é entender combinações comuns nesses atributos. Neste caso, buscamos associações de regiões que possuem Cientistas de Dados e possíveis padrões em relação a Faixa Etária e a Faixa Salarial, com o objetivo de  entender melhor como esses profissionais estão distribuídos pelo país, considerando diferentes grupos de idade e níveis de renda. Isso permite identificar padrões, como onde há mais profissionais, quais regiões têm maior concentração de jovens ou de profissionais mais experientes, e como a remuneração varia de acordo com a localização e a idade. Essa análise ajuda a criar estratégias mais eficientes para o mercado de trabalho voltadas para a área. 
 
