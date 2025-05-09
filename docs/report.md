@@ -191,6 +191,7 @@ Main Data Base
  • TP_NIVEL_ACADEMICO (Representa o nível de formação acadêmica do curso)
 
 **Graficos**
+
 [Acesse os graficos aqui](/assets/Grafico/graficos.md)
 
 ## Preparação dos dados
