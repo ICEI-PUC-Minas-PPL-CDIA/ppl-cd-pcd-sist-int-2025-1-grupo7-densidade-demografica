@@ -445,7 +445,8 @@ Trechos do código comentados:
 
 - Aqui é feito o gráfico para mostrar os acertos e erros do programa
 
-  
+![17467887836121283290005492835812](https://github.com/user-attachments/assets/168dea1b-6386-4e51-93c9-714ce6851708)
+
 
 ### Modelo 2: 
 
