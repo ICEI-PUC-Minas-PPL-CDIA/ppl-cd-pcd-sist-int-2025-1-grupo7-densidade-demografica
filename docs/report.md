@@ -404,96 +404,59 @@ Por outro lado, identificamos que os demais atributos não contribuíram de mane
 
 ### Modelo 1: Árvore de Decisão 
 
-- **Perguntada Orientada a Dados:** Quais atributos definem o nível de trabalho dos Cientistas de dados em diferentes estados?      
-- **Justificativa da escolha do modelo:**               
-Utilizamos o modelo de Associação com algoritmo Apriori para identificar regras de correlação nos dados de densidade demográfica. Com objetivo, de descobrir padrões frequentes e relações entre atributos, como região, renda e faixa de idade, no qual o objetivo é entender combinações comuns nesses atributos. Neste caso, buscamos associações de regiões que possuem Cientistas de Dados e possíveis padrões em relação a Faixa Etária e a Faixa Salarial, com o objetivo de  entender melhor como esses profissionais estão distribuídos pelo país, considerando diferentes grupos de idade e níveis de renda. Isso permite identificar padrões, como onde há mais profissionais, quais regiões têm maior concentração de jovens ou de profissionais mais experientes, e como a remuneração varia de acordo com a localização e a idade. Essa análise ajuda a criar estratégias mais eficientes para o mercado de trabalho voltadas para a área. 
+- **Perguntada Orientada a Dados:**
+  
+Em qual região existem profissionais mais qualificados? (junior, pleno, senior)
+- **Justificativa da escolha do modelo:**
+
+  
+O modelo Árvore de Decisão foi escolhido porque é fácil de entender e utilizar. Ele mostra de forma clara como as decisões são tomadas com base nos dados. Precisa de pouco tratamento dos dados antes de usar e consegue identificar quais informações são mais importantes para o resultado. Também é útil porque lida bem com situações complexas e pode ser ajustado para evitar erros por excesso de aprendizado.
 
 - **Processo de amostragem de dados:**               
 Foi dividido o dataset em conjuntos de treino e teste usando a função
-`train_test_split` do scikit-learn, com uma proporção de 70% para treino e 30% para teste `(test_size=0.3)`. 
+`train_test_split` do scikit-learn, uma quantidade de dados para treino de 75% e 25% vão para teste`(test_size=0.25)`. 
 
 - **Parâmetros utilizados:**            
-Para o algoritmo Apriori, foi definido
-`min_support=0.07`, ou seja, as regras devem aparecer em pelo menos 7% dos registros para serem consideradas frequentes.
-Para gerar as regras de associação, utilizou-se `confidence=0.7`, o que significa que as regras só são consideradas se tiverem uma confiança de pelo menos 70%.
+Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75% e 25% vão para teste
 
 - **Exemplo de saida:**    
-- antecedents: 
-- consequents: 
-- support: 
-- confidence: 
-- lift: 
+- Idade: 
+- faixa salarial: 
+- area da formação: 
+- idade: 
+- UF onde mora:
+- Cor/ raça / etnia
+- Nivel
 
 Trechos do código comentados:
 
 # Divisão do dataset em treino e teste
-`train_df`, `test_df = train_test_split(df_demografico, test_size=0.3, random_state=42)`       
-- Aqui, garantimos que 70% dos dados vão para treino e 30% para teste, com uma semente fixa para reprodutibilidade. 
-# Função para processar regras de associação
-def processar_regras(df_dados):         
-    `dataset = df_dados.drop('Região', axis=1).values.tolist()`  # priorizar estado        
-    `te = TransactionEncoder()`  # Cria o encoder para transformar os dados em formato binário           
-    `te_ary = te.fit(dataset).transform(dataset)`  # Aplica o encoder           
-    `df_transformed = pd.DataFrame(te_ary, columns=te.columns_)`  # Cria DataFrame com os atributos binários           
-    `frequent_itemsets = apriori(df_transformed, min_support=0.4, use_colnames=True)`  # Encontra conjuntos frequentes          
-    `regras = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.7)`  # Gera regras com confiança >= 70%       
-    `return regras`     
+`X_treino, X_teste, y_treino, y_teste = train_test_split(df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)`       
+- Aqui, garantimos que 75% dos dados vão para treino e 25% para teste, com uma semente fixa para reprodutibilidade.
 
-- **Gráfico informativo:**   
-Para finalizar é gerado um gráfico de barras empilhadas, o qual fornece uma visão clara da distribuição demográfica, facilitando a identificação de regiões com maior ou menor concentração de profissionais em diferentes faixas.   
+# Grafico de acerto
+0 = Junior
+1 = Pleno
+2 = Senior
 
-### Modelo 2: Transformação de dados
+`cm = ConfusionMatrix(modelo)`
+`cm.fit(X_treino, y_treino)`
+`cm.score(X_teste, y_teste)`
 
-- **Perguntada Orientada a Dados:** Qual a densidade demográfica de cientistas de dados pelo Brasil?
-Em qual região existem profissionais mais qualificados? (junior, pleno, senior)      
+- Aqui é feito o gráfico para mostrar os acertos e erros do programa
+
+  
+
+### Modelo 2: 
+
+- **Perguntada Orientada a Dados:**
 - **Justificativa da escolha do modelo:**  
-Utilizamos um modelo de transformação de dados baseado em agregações, filtragens e enriquecimento de dados externos (população por estado via IBGE) para responder às perguntas sobre densidade demográfica e qualificação de Cientistas de Dados no Brasil. Essa abordagem é especialmente apropriada quando o objetivo é consolidar informações dispersas em um formato analítico estruturado, possibilitando comparações entre regiões e faixas de perfil profissional. Por exemplo, partimos de uma base que continha cargos, estados e percepções de senioridade, mas esses dados brutos não indicavam diretamente onde havia maior densidade ou qualificação de profissionais. Assim, aplicamos transformações como: Filtragem condicional para isolar profissionais que se identificam ou atuam como Cientistas de Dados; Classificação por senioridade percebida para separar grupos “qualificados” (pleno/sênior) dos demais; Junção com dados populacionais externos para calcular uma métrica de densidade (número de Cientistas de Dados por 100 mil habitantes), padronizando comparações entre estados de tamanhos distintos; Agregações por estado e cálculo de proporções qualificadas para derivar insights sobre a distribuição e experiência desses profissionais.
-
 - **Processo de amostragem de dados:**
-Embora o modelo utilizado não seja de aprendizado supervisionado, aplicamos um processo de amostragem filtrada e particionamento lógico com os seguintes objetivos:
-	1 Filtragem Semântica:
 
-	- Isolamos apenas os registros em que o participante se identifica como “Cientista de Dados” ou atua dessa forma.
-
-	- Isso garante que a amostra seja coerente com o objetivo da análise: estudar a densidade e qualificação de Cientistas de Dados no Brasil.
-   
-	2 Particionamento por Estado e Senioridade:
-	- Após o filtro, os dados foram particionados por estado de residência e por percepção de senioridade, permitindo cálculos agregados regionais.
-
-	3 Validação por Amostragem Mínima (quasi cross-validation):
-  	- Estados com menos de 5 registros foram excluídos da análise percentual de qualificação, para evitar vieses por amostra pequena — uma forma de validação implícita.
- 
 - **Parâmetros Utilizados:**
-| Parâmetro              | Valor/Condição                                                                        |  Justificativa  |
-
-| Parâmetro              | Valor e Condição                                                                        |  Justificativa  |
-|-----------------------|--------------------------------------------------------------------------------|----------------|
-| `Filtro por cargo/atuação` | str.contains("cientista de dados")   |  Garante foco em profissionais relevantes |
-| `Senioridade considerada`  | "0.0" (pleno/sênior), "1.0" (júnior/iniciante)        | Baseado na codificação da base original |
-| `Amostra mínima por estado`| ≥ 5 registros            | Para confiabilidade estatística |
-| `População externa (IBGE)` | População por estado (2023)               | 	Necessária para cálculo de densidade demográfica |
-| `Métrica de densidade`    | # profissionais / população * 100.000       | Padronização entre estados com populações diferentes |
 
 - **Trechos de Código Comentados:**
-# 1. Filtro para selecionar apenas cientistas de dados
-mask_cientistas = df["cargo_atual"].str.contains("cientista de dados", case=False, na=False) | \
-df["atuacao_percebida"].str.contains("cientista de dados", case=False, na=False)
-df_cientistas = df[mask_cientistas]
-	- Isola os profissionais que efetivamente atuam como Cientistas de Dados.
 
-# 2. Agrupamento por estado
-cientistas_por_estado = df_cientistas["estado"].value_counts()
-	- Conta quantos profissionais atuam em cada estado.
-
-# 3. Agrupamento por senioridade (pleno/sênior vs. júnior)
-df_senioridade = df_cientistas[df_cientistas["senioridade_percebida"].notna()]
-senioridade_por_estado = df_senioridade.groupby(["estado", "senioridade_percebida"]).size().unstack(fill_value=0)
-	- Cria uma matriz com estados e contagem por tipo de senioridade.
-
-# 4. Cálculo da densidade proporcional à população
-df_densidade = cientistas_por_estado.to_frame(name="Qtd Cientistas").join(pd.Series(populacao_estimada, name="População"))
-df_densidade["Densidade por 100 mil hab"] = (df_densidade["Qtd Cientistas"] / df_densidade["População"]) * 100_000
-	- Normaliza a contagem de profissionais pela população, possibilitando comparação justa entre estados.
 ### Resultados obtidos com o modelo 1.
 
 Apresente aqui os resultados obtidos com a indução do modelo 1. 
