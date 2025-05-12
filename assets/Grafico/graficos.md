@@ -1,139 +1,140 @@
 **1- Gênero**
 
-- Moda: Masculino(3883)
+- Moda: Masculino (2206)
 
-<img src=https://github.com/user-attachments/assets/41674eef-491e-49f3-894f-d0d98a24aed8 width="600"/>  
+<img src=https://github.com/user-attachments/assets/9ca5090f-f8a9-464c-920d-839a9f75c360 width="900"/>  
 
-- Masculino: 75.1%  
-- Feminino: 24.5%  
+- Masculino: 75.9%  
+- Feminino: 23.6%  
 - preferiu não informar: 0.3%  
 - outros: 0.1%  
 
 **2- Faixa Etária**
 
-- Moda: 25-29(1627)
+<img src=https://github.com/user-attachments/assets/1b56c17f-92e2-47af-99c1-276b95ccfeaa width="900"/>  
 
-<img src=https://github.com/user-attachments/assets/b1a4698c-c1e0-4fbc-9ede-555dad8b1f9f width="600"/>  
-
-- 17-21: 3.4%  
-- 22-24: 9.4%  
-- 25-29: 31.5%  
-- 30-34: 25.9%  
-- 35-39: 14.8%   
-- 40-44: 8.0%  
-- 45-49: 3.5%  
-- 50-54: 2.1%  
-- mais que 55: 1.4%  
+- Moda: 25-29 (1084)  
+- Média: 30 anos  
+- Mediana: 29 anos  
+- 1º Quartil (Q1): 26 anos    
+- 3º Quartil (Q3): 34 anos  
+- Variância: 84,36   
+- Desvio-padrão: 9,19 anos   
 
 **3- Faixa Salarial**
 
-- Moda: 6.001-12.000(1640)
+<img src=https://github.com/user-attachments/assets/9c8a4581-f9be-48c3-8785-5aac4c6c3b76 width="900"/>  
 
-<img src=https://github.com/user-attachments/assets/5756a64d-768c-4888-a291-3a0f3d1601e7 width="600"/>  
-
-- 0-2.000: 14.7%  
-- 2.001-6.000: 26.6%  
-- 6.001-12.000: 31.7%  
-- 12.001-16.000: 12.3%  
-- 16.001-20.000: 6.1%  
-- mais que 20.001: 8.5%  
+- Moda: 8.001-12.000 (733)      
+- Média: 8904.71     
+- Mediana: R$7,000.50     
+- 1º Quartil (Q1): R$5,000.50      
+- 3º Quartil (Q3): R$10,000.50  
 
 **4- Nível de experiência**
 
-- Moda: 1 a 2 anos(1186)
+- Moda: 1 a 2 anos (897)
 
-<img src=https://github.com/user-attachments/assets/173c4a9c-6b2b-4e36-9715-72018a2aa83b width="600"/>  
+<img src=https://github.com/user-attachments/assets/fd058b9f-1ad4-4dfd-880e-ccf80b0408fc width="900"/>  
 
-- menos que 1 ano: 9.0%  
-- 1 a 2 anos: 22.9%  
-- 3 a 4 anos: 21.2%  
-- 4 a 6 anos: 15.5%  
-- mais que 6 anos: 18.4%  
-- não possui experiência: 13.1%  
+- menos que 1 ano: 9.7%
+- 1 a 2 anos: 30.9%  
+- 3 a 4 anos: 27.1%  
+- 4 a 5 anos: 10.1%
+- 5 a 6 anos: 7.8%
+- 7 a 10 anos: 7.2%
+- mais que 10 anos: 6.81% 
+- não possui experiência: 0.2%
 
 **5- Ciêntista por Estado**
 
-Moda: São Paulo(SP)(2073)
+Moda: São Paulo (SP) - (1126)
 
-<img src=https://github.com/user-attachments/assets/fbf05279-b98e-4beb-8bb3-6792579e70c2 width="600"/> 
+<img src=https://github.com/user-attachments/assets/f9bf37e4-c038-47b5-a761-6032e8e0bb93 width="900"/> 
 
 **6- Raça/Etnia/Cor**
 
-- Moda: Branca(3331)
+- Moda: Branca (1876)
 
-<img src=https://github.com/user-attachments/assets/5d53a1b2-a41d-481a-8442-32b445b20284 width="600"/>  
+<img src=https://github.com/user-attachments/assets/e7641f7c-0676-4fab-afc7-a802e5ef3575 width="900"/>  
 
-- Branca: 64.4%  
-- Parda: 24.3%  
-- Amarela: 2.8%  
+- Branca: 64.5%  
+- Parda: 24.1%  
+- Amarela: 2.9%  
 - preta: 7.3%  
-- preferiu não informar: 0.6%  
-- outra: 0.3%  
-- Indígena: 0.3%  
+- preferiu não informar: 0.8%  
+- outra: 0.2%  
+- Indígena: 0.2%  
 
 **7- Ciêntistas por Região**
 
-- Moda: Sudeste(3172)
+- Moda: Sudeste (1772)
 
-<img src=https://github.com/user-attachments/assets/9c5fa378-d068-4267-b030-18a647e4adaf width="600"/>   
+<img src=https://github.com/user-attachments/assets/8bc2cda6-fc01-45a4-9e44-cb7faf61939b width="900"/>   
 
-- Sudeste: 61.3%  
-- Sul: 18.6%  
-- Nordeste: 11.8%  
-- Centro-Oeste: 6.7%  
-- Norte: 1.7%  
+- Sudeste: 61.0%  
+- Sul: 20.0%  
+- Nordeste: 11.2%  
+- Centro-Oeste: 6.3%  
+- Norte: 1.4%  
 
 **8- Nível de Ensino**
 
-- Moda: Graduação/Bacharelado(2442)
+- Moda: Graduação/Bacharelado (1130)
 
-<img src=https://github.com/user-attachments/assets/2802abf5-f8db-4d37-a969-b571b5b13880 width="600"/>  
+<img src=https://github.com/user-attachments/assets/99583953-cdcb-4eb3-9e12-01f918271ddb width="900"/>  
 
-- Graduação/Bacharelado: 47.2%  
-- Pós-Graduação: 34.5%     
-- Mestrado: 12.3%   
-- Doutorado: 4%  
-- sem graduação: 2%  
-
+- Graduação/Bacharelado: 38.9%  
+- Pós-Graduação: 32.0%     
+- Mestrado: 12.8%   
+- Doutorado ou Phd: 3.9%  
+- Estudante Graduação: 12.5
+- 
 **9- Situação Empresarial**
 
-- Moda: Empregado(CLT)(4134)
+- Moda: Empregado(CLT) - (2326)
 
-<img src=https://github.com/user-attachments/assets/d9927137-4c2e-41e2-a553-c7ad59f6bdf7 width="600"/>  
+<img src=https://github.com/user-attachments/assets/f8ecaa96-2cfc-453d-9ce4-facf7b70fad9 width="900"/>  
 
-- Empregado(CLT): 79.9%  
-- Desempregado: 7.0%  
-- Estagiário: 4.0%  
-- Estudante: 1.9%  
-- Servidor Público: 2.8%  
-- outros: 4.4%  
+- Empregado(CLT): 80.0%  
+- Empregado(CNPJ): 9.0%  
+- Estagiário: 5.8%  
+- Empresa de fora do Brasil: 2.8%  
+- Servidor Público: 1.8%  
+- Freelancer: 0.5%
+- Prefiro não informar: 0.1% 
 
 **10- Cargo**
 
-- Moda: Analista de dados(em geral)(1829)
+- Moda: Analista de Dados (874)
 
-<img src=https://github.com/user-attachments/assets/b2dc972a-465f-478e-bae8-c1ac21d3b873 width="600"/>  
+<img src=https://github.com/user-attachments/assets/a1c350b1-cf45-4049-9af0-8be13b72ec71 width="900"/>  
 
-- Analista de Dados: 35.4%  
-- Engenheiro de Dados: 16.9%  
-- Ciêntista de Dados: 13.0%  
-- Estatístico: 0.4%  
-- Data Product Manager: 1.5%  
-- outros: 32.8%  
+- Analista de Dados: 30.1%
+- Cientista de Dados: 22.9%  
+- Engenheiro de Dados: 22.4%  
+- Analista de BI: 16.8%
+- Data Product Manager: 2.7%  
+- Engenheiro de machine learning: 2.5%  
+- Estatístico: 0.7%  
+- Analista de Inteligência de Mercado: 1.3%  
+- Administrador de Banco de Dados: 0.6%  
 
 **11- Área de Formação**
 
-- Moda: Computação/TI/ Engenharia de software(2115)
+- Moda: Computação (1231)
 
-<img src=https://github.com/user-attachments/assets/7df55226-0cfb-41c0-bea9-3fcff29d37c9 width="600"/>  
+<img src=https://github.com/user-attachments/assets/d5b26502-484e-4fdd-ab5f-d63730361761 width="900"/>  
 
-- Computação/TI/ Engenharia de software: 40.9%  
-- Economia: 15.4%  
-- Estatística: 7.1%  
-- Marketing: 2.5%  
-- Ciências Biológicas: 2.2%  
-- Ciências Sociais: 1.5%  
-- outros: 30.3%  
+- Computação: 42.3%  
+- Outras Engenharias: 22.7%   
+- Economia: 13.7%     
+- Estatística: 7.9%  
+- Outra opção: 4.8%   
+- Química / Física: 3.0%  
+- Marketing: 1.9%  
+- Ciências Biológicas: 2.0%  
+- Ciências Sociais: 1.6%    
 
 Gráficos com 2 variáveis:   
 - Área de Formação / Faixa Salarial   
