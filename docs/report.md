@@ -297,19 +297,65 @@ Trechos do código comentados:
 
 - **Trechos de Código Comentados:**
 
-### Resultados obtidos com o modelo 1.
+# **Resultados Modelo 1**   
 
-Apresente aqui os resultados obtidos com a indução do modelo 1. 
-Apresente uma matriz de confusão quando pertinente. Apresente as medidas de performance
-apropriadas para o seu problema. 
-Por exemplo, no caso de classificação: precisão, revocação, F-measure, acurácia.
+- Visualização da matriz de confusão (treino)     
+![image](https://github.com/user-attachments/assets/eec412cf-1a4d-4c7e-9a07-6bdb414b5bc5)   
+Treino: 0.7289 -> O modelo acerta aproximadamente 72.9%.     
 
-### Interpretação do modelo 1
+- Visualização da matriz de confusão (teste)    
+![image](https://github.com/user-attachments/assets/bed24ec5-8515-4859-ae8f-c1ca84aa801b)    
+Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.    
 
-Apresente os parâmetros do modelo obtido. Tentre mostrar as regras que são utilizadas no
-processo de 'raciocínio' (*reasoning*) do sistema inteligente. Utilize medidas como 
-o *feature importances* para tentar entender quais atributos o modelo se baseia no
-processo de tomada de decisão.
+# **Precisão treino**       
+
+| Classe  | Precision | Recall | F1-Score | Support |
+|---------|-----------|--------|----------|---------|
+| Júnior  | 0.71      | 0.84   | 0.77     | 591     |
+| Pleno   | 0.66      | 0.61   | 0.63     | 801     |
+| Sênior  | 0.82      | 0.77   | 0.79     | 788     |    
+
+**Acurácia geral:** 0.73
+
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Macro Avg   | 0.73      | 0.74   | 0.73     | 2180    |
+| Weighted Avg| 0.73      | 0.73   | 0.73     | 2180    |
+
+# **Precisão teste**  
+
+| Classe  | Precision | Recall | F1-Score | Support |
+|---------|-----------|--------|----------|---------|
+| Júnior  | 0.66      | 0.84   | 0.74     | 171     |
+| Pleno   | 0.62      | 0.55   | 0.58     | 280     |
+| Sênior  | 0.76      | 0.71   | 0.73     | 276     |  
+
+**Acurácia geral:** 0.68
+
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Macro Avg   | 0.68      | 0.70   | 0.68     | 727     |
+| Weighted Avg| 0.68      | 0.68   | 0.68     | 727     |    
+
+- O modelo de teste apresentou uma queda na Acurácia, principalmente devido a classe Pleno.
+
+# **Árvore de decisão finalizada**    
+![image](https://github.com/user-attachments/assets/7f53abc8-3d15-4df8-8a27-e8d4e15c86d4)    
+
+
+# **Interpretação do modelo 1**    
+- A partir, da ánalise da precisão de treinos e testes, é possível observar que o modelo é mais adequado para identificar Juniores e Seniores do que Plenos. Essa ánalise se deve a precisão e o desempenho que os níveis obtiveram.   
+- O modelo apresenta overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um pequeno overfiting.   
+- Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
+- O modelo em sí apresenta 68% de acerto nas classificações de níveis.  
+
+**Possíveis Melhoras:**  
+- Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
+- Observar quais atributos foram mais importantes para escolha dos níveis.
+- Balancear os dados.
+
+**Conclusão:**   
+O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfiting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
 
 ### Resultados obtidos com o modelo 2.
