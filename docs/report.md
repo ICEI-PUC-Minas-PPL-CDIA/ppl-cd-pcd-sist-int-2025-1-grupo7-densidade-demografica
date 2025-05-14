@@ -355,7 +355,7 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 - Balancear os dados.
 
 **Conclusão:**   
-O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfiting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
+O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
 
 ### Resultados obtidos com o modelo 2.
