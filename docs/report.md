@@ -345,7 +345,7 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 
 # **Interpretação do modelo 1**    
 - A partir, da ánalise da precisão de treinos e testes, é possível observar que o modelo é mais adequado para identificar Juniores e Seniores do que Plenos. Essa ánalise se deve a precisão e o desempenho que os níveis obtiveram.   
-- O modelo apresenta overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um pequeno overfiting.   
+- O modelo apresenta overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um pequeno overfitting.   
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
 - O modelo em sí apresenta 68% de acerto nas classificações de níveis.  
 
