@@ -205,6 +205,7 @@ Além disso, a base auxiliar apresentava códigos de cursos repetidos, uma vez q
 
 Por fim, utilizamos a base auxiliar para criar um novo atributo na base principal: quantidade de cursos no estado de residência. Com a ajuda do ChatGPT, comparamos a UF informada no registro da pessoa com a quantidade de cursos disponíveis na mesma UF (informação proveniente da base auxiliar). Dessa forma, foi possível preencher esse novo atributo com base na localização geográfica do participante.
 
+Depois disso, nós utilizamos o Python para remover alguns atributos que não são relevantes da base filtrada para responder à pergunta do primeiro modelo. Além disso, nós removemos as colunas vazias. Utilizamos a moda para substituir a pequena porcentagem de respostas no campo gênero que não indicaram "homem" ou "mulher", para que pudéssemos transformá-lo em binário. Além disso, transformamos todos os dados para int, para que, assim, o modelo induzido de árvore de decisão pudesse ser aplicado.
 
 Na nossa análise da densidade demográfica de Cientistas de Dados, optamos por selecionar certos atributos que se mostraram particularmente relevantes para entender melhor esse cenário. Esses atributos foram escolhidos com base em sua capacidade de fornecer insights significativos sobre a distribuição e as características dessa profissão em diferentes regiões.
 
