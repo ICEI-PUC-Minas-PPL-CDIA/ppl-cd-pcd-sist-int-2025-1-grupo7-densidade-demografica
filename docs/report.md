@@ -290,7 +290,7 @@ Trechos do código comentados:
 
 ### Modelo 2: 
 
-- **Perguntada Orientada a Dados:**
+- **Perguntada Orientada a Dados: Quais atributos aparecem mais frequente em cada regiao quando a pessoa trabalha com dados? **
 - **Justificativa da escolha do modelo:**  
 - **Processo de amostragem de dados:**
 
