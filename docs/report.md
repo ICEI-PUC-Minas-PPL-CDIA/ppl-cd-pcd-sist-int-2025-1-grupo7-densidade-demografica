@@ -359,9 +359,49 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
 
-### Resultados obtidos com o modelo 2.
+# **Resultados obtidos com o modelo 2.**    
+- Visualização da matriz de confusão (treino)     
+![image](https://github.com/user-attachments/assets/2d330b06-3f4d-4af6-a995-6426a42155ba)     
+Treino: 0.8914 -> O modelo acerta aproximadamente 89.1%.     
 
-Repita o passo anterior com os resultados do modelo 2.
+- Visualização da matriz de confusão (teste)    
+![image](https://github.com/user-attachments/assets/96a9cd2c-d187-484e-b5e4-9cf0f1ce6597)    
+Teste: 0.7120 -> O modelo acerta aproximadamente 71.2%.     
+
+# **Precisão treino**       
+
+| Classe  | Precision | Recall | F1-Score | Support |
+|---------|-----------|--------|----------|---------|
+| Júnior  | 0.95      | 0.86   | 0.90     | 534     |
+| Pleno   | 0.83      | 0.90   | 0.86     | 769     |
+| Sênior  | 0.92      | 0.91   | 0.92     | 760     |    
+
+**Acurácia geral:** 0.89 
+
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Macro Avg   | 0.90      | 0.89   | 0.89     | 2063    |
+| Weighted Avg| 0.89      | 0.89   | 0.89     | 2063    |
+
+# **Precisão teste**  
+
+| Classe  | Precision | Recall | F1-Score | Support |
+|---------|-----------|--------|----------|---------|
+| Júnior  | 0.77      | 0.68   | 0.72     | 228     |
+| Pleno   | 0.61      | 0.67   | 0.64     | 312     |
+| Sênior  | 0.80      | 0.78   | 0.79     | 304     |  
+
+**Acurácia geral:** 0.71 
+
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Macro Avg   | 0.72      | 0.71   | 0.72     | 844     |
+| Weighted Avg| 0.72      | 0.71   | 0.71     | 844     |    
+
+- O modelo de teste apresentou uma queda na Acurácia, principalmente devido a classe Pleno.  
+
+# **Random Forest finalizada**    
+![download](https://github.com/user-attachments/assets/2bc3dbe9-56b2-4457-8451-12da9e1b2177)  
 
 ### Interpretação do modelo 2
 
