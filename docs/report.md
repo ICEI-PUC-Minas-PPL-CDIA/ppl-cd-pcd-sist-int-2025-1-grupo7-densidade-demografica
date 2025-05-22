@@ -288,14 +288,20 @@ Trechos do código comentados:
 ![17467887836121283290005492835812](https://github.com/user-attachments/assets/168dea1b-6386-4e51-93c9-714ce6851708)
 
 
-### Modelo 2: 
+### Modelo 2: Random Forest
 
 - **Perguntada Orientada a Dados: Quais atributos aparecem mais frequente em cada regiao quando a pessoa trabalha com dados? **
-- **Justificativa da escolha do modelo:**  
-- **Processo de amostragem de dados:**
 
+  Em qual região existem profissionais mais qualificados? (junior, pleno, senior)
+- **Justificativa da escolha do modelo:**
+
+O modelo Random Forest foi escolhido porque ele possue características que o tornam uma das técnicas mais robustas e eficazes em problemas de classificação por: "Alta capacidade preditiva" em que o modelo combina múltiplas árvores de decisão, o que reduz significativamente a variância do modelo e melhora a generalização, evitando problemas de overfitting comuns; "Robustez a ruídos e outliers" onde devido ao processo de agregação (bagging), o modelo é menos sensível a dados ruidosos e a outliers, garantindo previsões mais estáveis e confiáveis; "Facil implementação no modelo de arvore de decição" que para fazer o modelo arvore de decição para random forest é bem facil.
+- **Processo de amostragem de dados:**
+  
+Foi dividido o dataset em conjuntos de treino e teste usando a função `train_test_split` do scikit-learn, uma quantidade de dados para treino de 71% e 29% vão para teste`(test_size=0.29)` e com um random_state de 69. 
 - **Parâmetros Utilizados:**
 
+test_size=0.29, n_estimators=100, max_depth=10, random_state=69, 
 - **Trechos de Código Comentados:**
 
 # **Resultados Modelo 1**   
