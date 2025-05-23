@@ -9,7 +9,6 @@
 
 **Thales Ribeiro Melo, thales.melo@sga.pucminas.br**
 
-**Arthur Gabriel Marques Coelho Mourão, agmcmourao@sga.pucminas.br**
 
 ---
 
@@ -245,8 +244,8 @@ Por outro lado, identificamos que os demais atributos não contribuíram de mane
 ### Modelo 1: Árvore de Decisão 
 
 - **Perguntada Orientada a Dados:**
-  
-Em qual região existem profissionais mais qualificados? (junior, pleno, senior)
+  Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
+
 - **Justificativa da escolha do modelo:**
 
   
@@ -290,9 +289,8 @@ Trechos do código comentados:
 
 ### Modelo 2: Random Forest
 
-- **Perguntada Orientada a Dados: Quais atributos aparecem mais frequente em cada regiao quando a pessoa trabalha com dados? **
-
-  Em qual região existem profissionais mais qualificados? (junior, pleno, senior)
+- **Perguntada Orientada a Dados:**
+  Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
 - **Justificativa da escolha do modelo:**
 
 O modelo Random Forest foi escolhido porque ele possue características que o tornam uma das técnicas mais robustas e eficazes em problemas de classificação por: "Alta capacidade preditiva" em que o modelo combina múltiplas árvores de decisão, o que reduz significativamente a variância do modelo e melhora a generalização, evitando problemas de overfitting comuns; "Robustez a ruídos e outliers" onde devido ao processo de agregação (bagging), o modelo é menos sensível a dados ruidosos e a outliers, garantindo previsões mais estáveis e confiáveis; "Facil implementação no modelo de arvore de decição" que para fazer o modelo arvore de decição para random forest é bem facil.
