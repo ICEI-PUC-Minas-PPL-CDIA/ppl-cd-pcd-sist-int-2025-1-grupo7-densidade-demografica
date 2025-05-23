@@ -450,6 +450,28 @@ e extrapolar um pouco o que os dados sugerem.
 Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
 em um sistema inteligente.
 
+### Modelo de Extra (associação)
+Modelo foi criado para responder a pergunta: quais os top 10 atributos aparecem mais frequente divididos por regiao quando a pessoa trabalha com dados?
+
+Resultados: 
+Região: Sudeste
+  - Qual sua situação atual de trabalho?_Empregado (CLT): apareceu em 806 regras
+  - Existe faculdade no Estado: apareceu em 733 regras
+  - Gênero_Masculino: apareceu em 623 regras
+  - Cor/raca/etnia_Branca: apareceu em 293 regras
+  - Numero de Funcionários_Acima de 3.000: apareceu em 22 regras
+
+• Região: Nordeste
+  - Gênero_Masculino: apareceu em 2 regras
+  - Qual sua situação atual de trabalho?_Empregado (CLT): apareceu em 2 regras
+
+• Região: Sul
+  - Qual sua situação atual de trabalho?_Empregado (CLT): apareceu em 33 regras
+  - Cor/raca/etnia_Branca: apareceu em 31 regras
+  - Gênero_Masculino: apareceu em 26 regras
+
+Interpretação
+Não foram criadas regras da região Norte e Centro Sul, possivelmente poissivelmente pois não há muitos cientistas de dados nessas regiões e por isso nenhuma regra ou poucas foram criadas para essas regiões.
 
 ## 8. Conclusão
 
