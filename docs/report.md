@@ -360,7 +360,18 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 - A partir, da ánalise da precisão de treinos e testes, é possível observar que o modelo é mais adequado para identificar Juniores e Seniores do que Plenos. Essa ánalise se deve a precisão e o desempenho que os níveis obtiveram.   
 - O modelo apresenta overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um pequeno overfitting.   
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
-- O modelo em sí apresenta 68% de acerto nas classificações de níveis.  
+- O modelo em sí apresenta 68% de acerto nas classificações de níveis.
+ 
+# **Conjunto de Dados utilizados**   
+- Idade   
+- Gênero   
+- Cor/Raça/Etnia  
+- UF onde Mora (Localização)    
+- Área de formação   
+- Setor    
+- Cargo Atual     
+- Faixa Salarial    
+- Nível de Ensino   
 
 **Possíveis Melhoras:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
@@ -427,6 +438,17 @@ Teste: 0.7120 -> O modelo acerta aproximadamente 71.2%.
 - O modelo de Random Forest apresenta overfitting, já que a diferença entre treino e teste é alta (aproximadamente 18%).   
 - Pleno apresenta uma queda na precisão, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
 - O modelo em sí apresenta 71% de acerto nas classificações de níveis.   
+
+# **Conjunto de Dados utilizados**   
+- Idade   
+- Gênero   
+- Cor/Raça/Etnia  
+- UF onde Mora (Localização)      
+- Área de formação   
+- Setor   
+- Cargo Atual   
+- Faixa Salarial   
+- Nível de Ensino
 
 **Possíveis Melhoras:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
