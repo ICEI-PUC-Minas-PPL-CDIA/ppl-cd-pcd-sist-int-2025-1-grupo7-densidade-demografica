@@ -8,11 +8,11 @@
 * João Gabriel de Melo Neves
 * Thiago Couto Ferreira
 * Thales Ribeiro Melo
-* Arthur Gabriel Marques Coelho Mourão
 
 ## Professor
 
 * Prof. Hugo Bastos de Paula
+* Prof. Hayala Nepomuceno Curto
 
 ## Instruções de utilização
 
