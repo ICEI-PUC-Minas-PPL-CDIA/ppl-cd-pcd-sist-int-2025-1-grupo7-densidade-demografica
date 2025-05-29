@@ -437,25 +437,25 @@ Teste: 0.6712 -> O modelo acerta aproximadamente 67.1%.
 - Pleno apresenta uma queda na precisão, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
 - O modelo em sí apresenta 67% de acerto nas classificações de níveis.   
 
-# **Conjunto de Dados utilizados (Ordem decrescente de importância)** 
-- Quanto tempo de experiência na área de dados você tem?
-- Faixa Salrial
-- Idade   
-- Faixa Idade   
-- Nível de Ensino  
-- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados?       
-- Cargo Atual       
-- Setor     
-- UF onde mora     
-- Gênero     
-- Área de Formação   
-- Existe faculdade no Estado   
-- PCD   
-- Cor   
-- Vive no Brasil
+# **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)** 
+- Quanto tempo de experiência na área de dados você tem? (41%)  
+- Faixa Salrial (23%)  
+- Idade (13%)   
+- Faixa Idade (7%)     
+- Nível de Ensino (7%)  
+- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (3%)       
+- Cargo Atual (2%)       
+- Setor (1%)    
+- UF onde mora (0.8%)    
+- Gênero (0.7%)     
+- Área de Formação (0.4%)    
+- Existe faculdade no Estado (0.3%)   
+- PCD (0.08%)      
+- Cor/raca/etnia (0.05%)   
+- Vive no Brasil (0%)   
 ![image](https://github.com/user-attachments/assets/1cefc5c4-3a94-4b78-a2f9-e2197bed3aba)   
 
-**Possíveis Melhoras:**  
+**Possíveis Melhorias:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
 - Remover mais atributos que sejam irrelevantes.    
 - Balancear os dados.  
