@@ -382,76 +382,82 @@ O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas,
 
 # **Resultados obtidos com o modelo 2.**    
 - Visualização da matriz de confusão (treino)     
-![image](https://github.com/user-attachments/assets/2d330b06-3f4d-4af6-a995-6426a42155ba)     
-Treino: 0.8914 -> O modelo acerta aproximadamente 89.1%.     
+![image](https://github.com/user-attachments/assets/a5b34a80-7aea-4e6c-9c6a-b28a908a92c9)  
+Treino: 0.7041 -> O modelo acerta aproximadamente 70.4%.     
 
 - Visualização da matriz de confusão (teste)    
-![image](https://github.com/user-attachments/assets/96a9cd2c-d187-484e-b5e4-9cf0f1ce6597)    
-Teste: 0.7120 -> O modelo acerta aproximadamente 71.2%.     
+![image](https://github.com/user-attachments/assets/f98e1406-5ac5-4569-b22f-7523051cd9a3)   
+Teste: 0.6712 -> O modelo acerta aproximadamente 67.1%.     
 
 # **Precisão treino**       
 
 | Classe  | Precision | Recall | F1-Score | Support |
 |---------|-----------|--------|----------|---------|
-| Júnior  | 0.95      | 0.86   | 0.90     | 534     |
-| Pleno   | 0.83      | 0.90   | 0.86     | 769     |
-| Sênior  | 0.92      | 0.91   | 0.92     | 760     |    
+| Júnior  | 0.80      | 0.62   | 0.70     | 591     |
+| Pleno   | 0.60      | 0.69   | 0.64     | 801     |
+| Sênior  | 0.76      | 0.79   | 0.77     | 788     |    
 
-**Acurácia geral:** 0.89 
+**Acurácia geral:** 0.70 
 
 |             | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.90      | 0.89   | 0.89     | 2063    |
-| Weighted Avg| 0.89      | 0.89   | 0.89     | 2063    |
+| Macro Avg   | 0.72      | 0.70   | 0.71     | 2180    |
+| Weighted Avg| 0.71      | 0.70   | 0.71     | 2180    |
 
 # **Precisão teste**  
 
 | Classe  | Precision | Recall | F1-Score | Support |
 |---------|-----------|--------|----------|---------|
-| Júnior  | 0.77      | 0.68   | 0.72     | 228     |
-| Pleno   | 0.61      | 0.67   | 0.64     | 312     |
-| Sênior  | 0.80      | 0.78   | 0.79     | 304     |  
+| Júnior  | 0.75      | 0.60   | 0.67     | 171     |
+| Pleno   | 0.58      | 0.64   | 0.61     | 280     |
+| Sênior  | 0.73      | 0.75   | 0.74     | 276     |  
 
-**Acurácia geral:** 0.71 
+**Acurácia geral:** 0.67 
 
 |             | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.72      | 0.71   | 0.72     | 844     |
-| Weighted Avg| 0.72      | 0.71   | 0.71     | 844     |    
+| Macro Avg   | 0.69      | 0.66   | 0.67     | 727     |
+| Weighted Avg| 0.68      | 0.66   | 0.67     | 727     |    
 
 - O modelo de teste apresentou uma queda na Acurácia, principalmente devido a classe Pleno.  
 
 # **Random Forest finalizada**    
-![download](https://github.com/user-attachments/assets/2bc3dbe9-56b2-4457-8451-12da9e1b2177)  
+  
 
 # **Interpretação do modelo 2**   
 
 - O modelo utilizado foi o `RandomForestClassifier` para a Floresta aleatória.
 - O principal objetivo é a classificação dos níveis (Júnior, Pleno, Sênior), com base em atributos do perfil do indivíduo.   
-- Os parâmetros principais `n_estimators=100`, `max_depth=10`, `test_size=0.29` (Para o número de árvores, ajuste da profundidade da árvore e a separação de 29% dos dados para o conjunto de teste e 71% dos dados para o conjunto de treino).
-- O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.
+- Os parâmetros principais `n_estimators=20`, `max_depth=5`, `test_size=0.25`, `ccp_alpha=0.002` (Para o número de árvores, ajuste da profundidade da árvore, a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino, e para o controle do overfitting do modelo).  
+- O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.  
 - Em segundo lugar, ele define os níveis profissionais e de ensino em números crescentes e define o gênero para número binários (0 = Júnior, 1 = Pleno e 2 = Sênior) (0 = Masculino e 1 = Feminino).   
 - O modelo apresenta uma divisão de dados aleatória para cada árvore de decisão formada, em que cada nó um conjunto aleatório de atributos é testado.    
-- O modelo possui como atributo mais influente para a tomada de decisão, a Idade e o setor no qual o indivíduo trabalha.    
-- O modelo de Random Forest apresenta overfitting, já que a diferença entre treino e teste é alta (aproximadamente 18%).   
+- O modelo possui como atributo mais influente para a tomada de decisão, o Quanto tempo de experiência na área de dados e a Faixa Salarial.    
+- O modelo apresenta uma diferença de apenas 3% entre treino e teste, fator que indica que o modelo não apresenta overfitting.   
 - Pleno apresenta uma queda na precisão, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
-- O modelo em sí apresenta 71% de acerto nas classificações de níveis.   
+- O modelo em sí apresenta 67% de acerto nas classificações de níveis.   
 
-# **Conjunto de Dados utilizados**   
+# **Conjunto de Dados utilizados (Ordem decrescente de importância)** 
+- Quanto tempo de experiência na área de dados você tem?
+- Faixa Salrial
 - Idade   
-- Gênero   
-- Cor/Raça/Etnia  
-- UF onde Mora (Localização)      
-- Área de formação   
-- Setor   
-- Cargo Atual   
-- Faixa Salarial   
-- Nível de Ensino
+- Faixa Idade   
+- Nível de Ensino  
+- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados?       
+- Cargo Atual       
+- Setor     
+- UF onde mora     
+- Gênero     
+- Área de Formação   
+- Existe faculdade no Estado   
+- PCD   
+- Cor   
+- Vive no Brasil
+![image](https://github.com/user-attachments/assets/1cefc5c4-3a94-4b78-a2f9-e2197bed3aba)   
 
 **Possíveis Melhoras:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
-- Remover mais atributos que sejam irrelevantes.  
-- Reduzir a complexidade do modelo (diminuindo a profundidade de cada árvore)   
+- Remover mais atributos que sejam irrelevantes.    
 - Balancear os dados.  
 
 **Conclusão:**   
