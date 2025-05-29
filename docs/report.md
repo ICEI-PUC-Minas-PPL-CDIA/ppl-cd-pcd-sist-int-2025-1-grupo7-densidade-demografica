@@ -269,9 +269,9 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 - Cor/ raça / etnia
 - Nivel
 
-#### [Código primeiro modelo]([/assets/Grafico/graficos.md](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)) 
+#### [Código Modelo 1]([/assets/Grafico/graficos.md](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)) 
 
-#### [Resultado primeiro modelo](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Results%20First%20Model/Read.md)
+#### [Resultados Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Results%20First%20Model/Read.md)
 
 
 ## **Interpretação do modelo 1**      
@@ -305,9 +305,9 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 ## **Conclusão:**   
 O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
+---
 
-
-## Modelo 2: Random Forest
+# Modelo 2: Random Forest
 
 - **Perguntada Orientada a Dados:**
   Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
@@ -320,52 +320,12 @@ Foi dividido o dataset em conjuntos de treino e teste usando a função `train_t
 - **Parâmetros Utilizados:**
 
 test_size=0.29, n_estimators=100, max_depth=10, random_state=69,     
+
+[Código Modelo 2]
+
+[Resultados Modelo 2]
   
-# **Resultados obtidos com o modelo 2.**    
-- Visualização da matriz de confusão (treino)     
-![image](https://github.com/user-attachments/assets/a5b34a80-7aea-4e6c-9c6a-b28a908a92c9)  
-Treino: 0.7041 -> O modelo acerta aproximadamente 70.4%.     
-
-- Visualização da matriz de confusão (teste)    
-![image](https://github.com/user-attachments/assets/f98e1406-5ac5-4569-b22f-7523051cd9a3)   
-Teste: 0.6712 -> O modelo acerta aproximadamente 67.1%.     
-
-# **Precisão treino**       
-
-| Classe  | Precision | Recall | F1-Score | Support |
-|---------|-----------|--------|----------|---------|
-| Júnior  | 0.80      | 0.62   | 0.70     | 591     |
-| Pleno   | 0.60      | 0.69   | 0.64     | 801     |
-| Sênior  | 0.76      | 0.79   | 0.77     | 788     |    
-
-**Acurácia geral:** 0.70 
-
-|             | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.72      | 0.70   | 0.71     | 2180    |
-| Weighted Avg| 0.71      | 0.70   | 0.71     | 2180    |
-
-# **Precisão teste**  
-
-| Classe  | Precision | Recall | F1-Score | Support |
-|---------|-----------|--------|----------|---------|
-| Júnior  | 0.75      | 0.60   | 0.67     | 171     |
-| Pleno   | 0.58      | 0.64   | 0.61     | 280     |
-| Sênior  | 0.73      | 0.75   | 0.74     | 276     |  
-
-**Acurácia geral:** 0.67 
-
-|             | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.69      | 0.66   | 0.67     | 727     |
-| Weighted Avg| 0.68      | 0.66   | 0.67     | 727     |    
-
-- O modelo de teste apresentou uma queda na Acurácia, principalmente devido a classe Pleno.  
-
-# **Random Forest finalizada**    
-  
-
-# **Interpretação do modelo 2**   
+## **Interpretação do modelo 2**   
 
 - O modelo utilizado foi o `RandomForestClassifier` para a Floresta aleatória.
 - O principal objetivo é a classificação dos níveis (Júnior, Pleno, Sênior), com base em atributos do perfil do indivíduo.   
@@ -378,7 +338,7 @@ Teste: 0.6712 -> O modelo acerta aproximadamente 67.1%.
 - Pleno apresenta uma queda na precisão, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
 - O modelo em sí apresenta 67% de acerto nas classificações de níveis.   
 
-# **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)** 
+## **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)** 
 - Quanto tempo de experiência na área de dados você tem? (41%)  
 - Faixa Salrial (23%)  
 - Idade (13%)   
@@ -401,11 +361,12 @@ Teste: 0.6712 -> O modelo acerta aproximadamente 67.1%.
 - Remover mais atributos que sejam irrelevantes.    
 - Balancear os dados.  
 
-**Conclusão:**   
+## **Conclusão:**   
 O modelo é razoável porém precisa ser melhorado, ele continua tendo dificuldade na identificação de classes, fator o qual diminui a acurácia geral e compromete no resultado final do modelo. Um dos principais fatores que levam ao desequilibrio do modelo, se deve a quantidade de atributos utilizados. O modelo possui baixa precisão na classe Pleno, fator que precisa ser melhorado. Logo com certas melhorias o modelo tende a se tornar equilibrado para a classificação dos níveis profissionais.
 
+---
 
-## Análise comparativa dos modelos
+# Análise comparativa dos modelos
 
 Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
 modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
