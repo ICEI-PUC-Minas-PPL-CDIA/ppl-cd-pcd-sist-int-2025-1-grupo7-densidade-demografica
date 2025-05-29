@@ -274,7 +274,7 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 #### [Resultado primeiro modelo](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Results%20First%20Model/Read.md)
 
 
-### **Interpretação do modelo 1**      
+## **Interpretação do modelo 1**      
 - O modelo utilizado foi o `DecisionTreeClassifier` para a árvore de decisão.
 - Os parâmetros principais `max_depth=5`, `test_size=0.25`. (Para o ajuste da profundidade da árvore e a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino).  
 - O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.
@@ -286,7 +286,7 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
 - O modelo em sí apresenta 68% de acerto nas classificações de níveis.
  
-### **Conjunto de Dados utilizados**   
+## **Conjunto de Dados utilizados**   
 - Idade   
 - Gênero   
 - Cor/Raça/Etnia  
