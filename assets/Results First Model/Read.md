@@ -32,7 +32,6 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 | Sênior  | 0.76      | 0.71   | 0.73     | 276     |  
 
 **Acurácia geral:** 0.68
-
 |             | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
 | Macro Avg   | 0.68      | 0.70   | 0.68     | 727     |
