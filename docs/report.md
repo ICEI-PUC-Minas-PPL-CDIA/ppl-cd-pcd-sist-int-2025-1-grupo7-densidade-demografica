@@ -237,11 +237,13 @@ Na nossa análise da densidade demográfica de Cientistas de Dados, optamos por 
 
 Por outro lado, identificamos que os demais atributos não contribuíram de maneira eficaz para a nossa análise. Isso nos permitiu focar em dados que realmente fazem a diferença, garantindo que nossas conclusões sejam precisas e úteis. Ao concentrar nossos esforços nos atributos mais relevantes, conseguimos obter uma visão mais clara e informada sobre a demografia dos Cientistas de Dados, facilitando a tomada de decisões e o planejamento estratégico.
 
+---
 
+# Indução de modelos  
 
-## Indução de modelos  
+---
 
-### Modelo 1: Árvore de Decisão 
+# Modelo 1: Árvore de Decisão 
 
 - **Perguntada Orientada a Dados:**
   Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
@@ -267,88 +269,12 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 - Cor/ raça / etnia
 - Nivel
 
-Trechos do código comentados:
+#### [Código primeiro modelo]([/assets/Grafico/graficos.md](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)) 
 
-# Divisão do dataset em treino e teste
-`X_treino, X_teste, y_treino, y_teste = train_test_split(df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)`       
-- Aqui, garantimos que 75% dos dados vão para treino e 25% para teste, com uma semente fixa para reprodutibilidade.
-
-# Grafico de acerto
-0 = Junior
-1 = Pleno
-2 = Senior
-
-`cm = ConfusionMatrix(modelo)`
-`cm.fit(X_treino, y_treino)`
-`cm.score(X_teste, y_teste)`
-
-- Aqui é feito o gráfico para mostrar os acertos e erros do programa
-
-![17467887836121283290005492835812](https://github.com/user-attachments/assets/168dea1b-6386-4e51-93c9-714ce6851708)
+#### [Resultado primeiro modelo](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Results%20First%20Model/Read.md)
 
 
-### Modelo 2: Random Forest
-
-- **Perguntada Orientada a Dados:**
-  Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
-- **Justificativa da escolha do modelo:**
-
-O modelo Random Forest foi escolhido porque ele possue características que o tornam uma das técnicas mais robustas e eficazes em problemas de classificação por: "Alta capacidade preditiva" em que o modelo combina múltiplas árvores de decisão, o que reduz significativamente a variância do modelo e melhora a generalização, evitando problemas de overfitting comuns; "Robustez a ruídos e outliers" onde devido ao processo de agregação (bagging), o modelo é menos sensível a dados ruidosos e a outliers, garantindo previsões mais estáveis e confiáveis; "Facil implementação no modelo de arvore de decição" que para fazer o modelo arvore de decição para random forest é bem facil.
-- **Processo de amostragem de dados:**
-  
-Foi dividido o dataset em conjuntos de treino e teste usando a função `train_test_split` do scikit-learn, uma quantidade de dados para treino de 71% e 29% vão para teste`(test_size=0.29)` e com um random_state de 69. 
-- **Parâmetros Utilizados:**
-
-test_size=0.29, n_estimators=100, max_depth=10, random_state=69, 
-- **Trechos de Código Comentados:**
-
-# **Resultados Modelo 1**   
-
-- Visualização da matriz de confusão (treino)     
-![image](https://github.com/user-attachments/assets/eec412cf-1a4d-4c7e-9a07-6bdb414b5bc5)   
-Treino: 0.7289 -> O modelo acerta aproximadamente 72.9%.     
-
-- Visualização da matriz de confusão (teste)    
-![image](https://github.com/user-attachments/assets/bed24ec5-8515-4859-ae8f-c1ca84aa801b)    
-Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.    
-
-# **Precisão treino**       
-
-| Classe  | Precision | Recall | F1-Score | Support |
-|---------|-----------|--------|----------|---------|
-| Júnior  | 0.71      | 0.84   | 0.77     | 591     |
-| Pleno   | 0.66      | 0.61   | 0.63     | 801     |
-| Sênior  | 0.82      | 0.77   | 0.79     | 788     |    
-
-**Acurácia geral:** 0.73
-
-|             | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.73      | 0.74   | 0.73     | 2180    |
-| Weighted Avg| 0.73      | 0.73   | 0.73     | 2180    |
-
-# **Precisão teste**  
-
-| Classe  | Precision | Recall | F1-Score | Support |
-|---------|-----------|--------|----------|---------|
-| Júnior  | 0.66      | 0.84   | 0.74     | 171     |
-| Pleno   | 0.62      | 0.55   | 0.58     | 280     |
-| Sênior  | 0.76      | 0.71   | 0.73     | 276     |  
-
-**Acurácia geral:** 0.68
-
-|             | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.68      | 0.70   | 0.68     | 727     |
-| Weighted Avg| 0.68      | 0.68   | 0.68     | 727     |    
-
-- O modelo de teste apresentou uma queda na Acurácia, principalmente devido a classe Pleno.
-
-# **Árvore de decisão finalizada**    
-![image](https://github.com/user-attachments/assets/7f53abc8-3d15-4df8-8a27-e8d4e15c86d4)    
-
-   
-# **Interpretação do modelo 1**      
+### **Interpretação do modelo 1**      
 - O modelo utilizado foi o `DecisionTreeClassifier` para a árvore de decisão.
 - Os parâmetros principais `max_depth=5`, `test_size=0.25`. (Para o ajuste da profundidade da árvore e a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino).  
 - O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.
@@ -360,7 +286,7 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
 - O modelo em sí apresenta 68% de acerto nas classificações de níveis.
  
-# **Conjunto de Dados utilizados**   
+### **Conjunto de Dados utilizados**   
 - Idade   
 - Gênero   
 - Cor/Raça/Etnia  
@@ -376,10 +302,25 @@ Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.
 - Observar quais atributos foram mais importantes para escolha dos níveis.
 - Balancear os dados.
 
-**Conclusão:**   
+## **Conclusão:**   
 O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
 
+
+## Modelo 2: Random Forest
+
+- **Perguntada Orientada a Dados:**
+  Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)
+- **Justificativa da escolha do modelo:**
+
+O modelo Random Forest foi escolhido porque ele possue características que o tornam uma das técnicas mais robustas e eficazes em problemas de classificação por: "Alta capacidade preditiva" em que o modelo combina múltiplas árvores de decisão, o que reduz significativamente a variância do modelo e melhora a generalização, evitando problemas de overfitting comuns; "Robustez a ruídos e outliers" onde devido ao processo de agregação (bagging), o modelo é menos sensível a dados ruidosos e a outliers, garantindo previsões mais estáveis e confiáveis; "Facil implementação no modelo de arvore de decição" que para fazer o modelo arvore de decição para random forest é bem facil.
+- **Processo de amostragem de dados:**
+  
+Foi dividido o dataset em conjuntos de treino e teste usando a função `train_test_split` do scikit-learn, uma quantidade de dados para treino de 71% e 29% vão para teste`(test_size=0.29)` e com um random_state de 69. 
+- **Parâmetros Utilizados:**
+
+test_size=0.29, n_estimators=100, max_depth=10, random_state=69,     
+  
 # **Resultados obtidos com o modelo 2.**    
 - Visualização da matriz de confusão (treino)     
 ![image](https://github.com/user-attachments/assets/a5b34a80-7aea-4e6c-9c6a-b28a908a92c9)  
