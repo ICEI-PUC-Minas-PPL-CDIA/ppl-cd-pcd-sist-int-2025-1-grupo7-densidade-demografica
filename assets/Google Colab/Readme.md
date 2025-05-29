@@ -4,6 +4,7 @@ Este diretório mantém os modelos.
 Os principais documentos a serem produzidos são:
 
 * `AssociationModel.ipynb`
+  * Modelo extra
 
 * `DecisionTreeModel.ipynb`
  
