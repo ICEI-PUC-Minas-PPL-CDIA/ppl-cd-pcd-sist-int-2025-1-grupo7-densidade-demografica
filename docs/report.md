@@ -255,20 +255,59 @@ O modelo Árvore de Decisão foi escolhido porque é fácil de entender e utiliz
 
 - **Processo de amostragem de dados:**               
 Foi dividido o dataset em conjuntos de treino e teste usando a função
-`train_test_split` do scikit-learn, uma quantidade de dados para treino de 75% e 25% vão para teste`(test_size=0.25)`. 
+`train_test_split` do scikit-learn, uma quantidade de dados para treino de 75% e 25% vão para teste`(test_size=0.25)`.  
 
 - **Parâmetros utilizados:**            
-Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75% e 25% vão para teste
+Foi definido `test_size=0.25` -> uma quantidade de dados para treino de 75% e 25% vão para teste.    
+`modelo.feature_importances_` -> para a avaliação dos atributos de mais importância na tomada de decisão do modelo.  
+`ccp_alpha=0.006` -> controle de overfitting.  
+`max_depth=5` -> para a profundidade da árvore.
 
-- **Exemplo de saida:**    
-- Idade: 
-- faixa salarial: 
-- area da formação: 
-- idade: 
-- UF onde mora:
-- Cor/ raça / etnia
-- Nivel
+- **Trechos do Código:**  
+```python
+`from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
+X_treino, X_teste, y_treino, y_teste = train_test_split(
+    df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42
+)
+
+modelo = DecisionTreeClassifier(
+    criterion='gini', ccp_alpha=0.006, max_depth=5, random_state=42
+)
+modelo.fit(X_treino, y_treino)`
+```
+
+```python
+`# Obtemos a importância das features
+importancias = modelo.feature_importances_
+
+# Associamos aos nomes das colunas
+df_importancia = pd.DataFrame({
+    'Feature': X_treino.columns,
+    'Importância': importancias
+})
+
+# Ordenamos do mais importante para o menos
+df_importancia = df_importancia.sort_values(by='Importância', ascending=False)
+
+# Exibimos
+print(df_importancia`
+```  
+
+```python
+`accuracy_score(y_teste, previsoesTeste)
+accuracy_score(y_treino, previsoesTreino)
+
+cm = ConfusionMatrix(modelo)
+cm.fit(X_treino, y_treino)
+cm.score(X_treino, y_treino)
+
+cm = ConfusionMatrix(modelo)
+cm.fit(X_treino, y_treino)
+cm.score(X_teste, y_teste)`
+```    
+- Mostra a acurácia e as matrizes de confusão de teste e treino.   
 #### [Código Modelo 1]([/assets/Grafico/graficos.md](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)) 
 
 #### [Resultados Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Results%20First%20Model/Read.md)
@@ -286,16 +325,23 @@ Foi definido test_size=0.25, ou seja, uma quantidade de dados para treino de 75%
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
 - O modelo em sí apresenta 68% de acerto nas classificações de níveis.
  
-## **Conjunto de Dados utilizados**   
-- Idade   
-- Gênero   
-- Cor/Raça/Etnia  
-- UF onde Mora (Localização)    
-- Área de formação   
-- Setor    
-- Cargo Atual     
-- Faixa Salarial    
-- Nível de Ensino   
+## **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)**   
+- Quanto tempo de experiência na área de dados você tem? (62%)  
+- Faixa Salrial (33%)  
+- Idade (0.4%)   
+- Faixa Idade (0%)     
+- Nível de Ensino (0%)  
+- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (0%)       
+- Cargo Atual (0%)       
+- Setor (0%)    
+- UF onde mora (0%)    
+- Gênero (0%)     
+- Área de Formação (0%)    
+- Existe faculdade no Estado (0%)   
+- PCD (0%)      
+- Cor/raca/etnia (0%)   
+- Vive no Brasil (0%)   
+![image](https://github.com/user-attachments/assets/3c8d24c8-f3f3-469f-80e0-d866af9418c5)   
 
 **Possíveis Melhoras:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
@@ -315,11 +361,55 @@ O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas,
 
 O modelo Random Forest foi escolhido porque ele possue características que o tornam uma das técnicas mais robustas e eficazes em problemas de classificação por: "Alta capacidade preditiva" em que o modelo combina múltiplas árvores de decisão, o que reduz significativamente a variância do modelo e melhora a generalização, evitando problemas de overfitting comuns; "Robustez a ruídos e outliers" onde devido ao processo de agregação (bagging), o modelo é menos sensível a dados ruidosos e a outliers, garantindo previsões mais estáveis e confiáveis; "Facil implementação no modelo de arvore de decição" que para fazer o modelo arvore de decição para random forest é bem facil.
 - **Processo de amostragem de dados:**
-  
-Foi dividido o dataset em conjuntos de treino e teste usando a função `train_test_split` do scikit-learn, uma quantidade de dados para treino de 71% e 29% vão para teste`(test_size=0.29)` e com um random_state de 69. 
-- **Parâmetros Utilizados:**
+ 
+Foi dividido o dataset em conjuntos de treino e teste usando a função `train_test_split` do scikit-learn, uma quantidade de dados para treino de 75% e 25% vão para teste`(test_size=0.25)` e com um random_state de 42.  
 
-test_size=0.29, n_estimators=100, max_depth=10, random_state=69,     
+- **Parâmetros utilizados:**            
+Foi definido `test_size=0.25` -> uma quantidade de dados para treino de 75% e 25% vão para teste.    
+`modelo.feature_importances_` -> para a avaliação dos atributos de mais importância na tomada de decisão do modelo.  
+`ccp_alpha=0.002` -> controle de overfitting.  
+`max_depth=5` -> para a profundidade da árvore.  
+`n_estimators=20` -> para o número de árvores criadas.   
+`min_impurity_decrease=0.001` -> controle crescimento da árvore.  
+
+- **Trechos do Código:**  
+```python
+`X_treino, X_teste, y_treino, y_teste = train_test_split(df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)
+
+modelo = RandomForestClassifier(n_estimators=20,criterion='gini', max_depth=5, random_state=42, ccp_alpha=0.002, min_impurity_decrease=0.001)
+modelo.fit(X_treino, y_treino)`
+```
+
+```python
+`# Obtemos a importância das features
+importancias = modelo.feature_importances_
+
+# Associamos aos nomes das colunas
+df_importancia = pd.DataFrame({
+    'Feature': X_treino.columns,
+    'Importância': importancias
+})
+
+# Ordenamos do mais importante para o menos
+df_importancia = df_importancia.sort_values(by='Importância', ascending=False)
+
+# Exibimos
+print(df_importancia`
+```
+
+```python
+`accuracy_score(y_teste, previsoesTeste)
+accuracy_score(y_treino, previsoesTreino)
+
+cm = ConfusionMatrix(modelo)
+cm.fit(X_treino, y_treino)
+cm.score(X_treino, y_treino)
+
+cm = ConfusionMatrix(modelo)
+cm.fit(X_treino, y_treino)
+cm.score(X_teste, y_teste)`
+```    
+- Mostra a acurácia e as matrizes de confusão de teste e treino.      
 
 #### [Código Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)
 
