@@ -150,9 +150,15 @@ Gráficos com 2 variáveis:
 - Faixa Etária/Nível na Empresa  
 <img src=https://github.com/user-attachments/assets/0a74d5dc-13f1-4cc2-9992-959ac2ab19d7 width="900">  
 
-- Nível na Empresa/Salário  
+- Nível na Empresa/Salário    
 <img src=https://github.com/user-attachments/assets/03aacc34-766c-49c2-afcb-168b67c4d63b width="900">   
 
+- Faixa Salarial/Quanto tempo de experiência na área de dados você tem?    
+<img src=https://github.com/user-attachments/assets/3c9ec093-dd26-439d-a74c-a1e358161cc7 width="900">    
+
+- Faixa idade/Quanto tempo de experiência na área de dados você tem?   
+<img src=https://github.com/user-attachments/assets/0a09a90e-4353-4093-bad4-7641e424daad width="900">    
+ 
 
 - **Gráfico base auxiliar**      
 <img src=https://github.com/user-attachments/assets/08a5812f-1697-481a-add7-38c93b236c07 width="600">     
