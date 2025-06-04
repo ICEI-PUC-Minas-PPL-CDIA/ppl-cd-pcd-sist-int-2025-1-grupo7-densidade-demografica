@@ -195,11 +195,11 @@ Main Data Base
 
 ## Preparação dos dados
 Levando em conta a pergunta orientada a dados (Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)), as hipóteses levantadas foram:   
-- **Hipótese 1: Qual o nível de trabalho que se permaneceu predominante?**
+- **Hipótese 1: Qual o nível de trabalho que se permaneceu predominante?**    
 De acordo com as expectativas da empresa, era se esperado que o nível de trabalho predominante fosse o Júnior em relação aos outros, fator o qual de fato se sucedeu durante a análise do modelo.
-- **Hipótese 2: Qual o estado em que há mais Cientistas de Dados qualificados?**
+- **Hipótese 2: Qual o estado em que há mais Cientistas de Dados qualificados?**    
 A empresa acreditava que o estado em que ocorreria a maior densidade de Cientista de Dados qualificados seria em São Paulo (SP), elemento que, de fato, ocorreu durante a análise do modelo.
-- **Hipótese 3: Qual o atributo que é mais relevante para a qualificação do nível de trabalho de um Cientista de Dados?**
+- **Hipótese 3: Qual o atributo que é mais relevante para a qualificação do nível de trabalho de um Cientista de Dados?**    
 Já na questão de qual atributo seria mais relevante para a qualificação do nível de trabalho de um Cientista de Dados, o grupo empresarial errou em sua hipótese ao acreditar que a Faixa Salarial seria tal atributo, o qual está errado, uma vez que o atributo mais importante na tomada de decisão do modelo foi o Quanto tempo de experiência na área de dados você tem?. 
 
 Primeiramente, foi utilizada a base principal obtida no Kaggle. Nela, selecionamos manualmente os atributos considerados relevantes para o tema do trabalho, que é a densidade demográfica de cientistas de dados. Na tabela abaixo, justificamos os motivos pelos quais esses atributos foram escolhidos.
