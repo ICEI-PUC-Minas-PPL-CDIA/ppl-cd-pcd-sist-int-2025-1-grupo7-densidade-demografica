@@ -1,7 +1,7 @@
-# Análise de densidade demografica de cientista de dados
+# Análise de nível profissional das pessoas que trabalham com dados
 
-   Desenvolver um sistema inteligente para mostrar geograficamente a densidade de cientistas de dados por municipio e indicar quais municipios estão saturados para que empresas tenham uma maior facilidade de contratar cientistas de dados ao abrirem suas empresas.
-   Isso seria feito para que as empressas consigam analisar os beneficios (como facilidade de contratar cientistas de dados) de determinadas areas e em quais lugares eles devem abrir suas empresas.
+   Desenvolver um sistema inteligente para mostrar qual o nível de uma pessoa que trabalha com dados costuma ficar em uma empresa.
+   Isso seria feito para que as empressas consigam analisar o quão capacitado são as pessoas que trabalham com dados e ajudar a determinar os salários dessas pessoas baseados nisso.
 ## Integrantes
 
 * Ian Vinicius Marinho Malta
