@@ -492,20 +492,10 @@ O modelo é razoável porém precisa ser melhorado, ele continua tendo dificulda
 
 ---
 
-# Análise comparativa dos modelos
-
-Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
-modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
-e extrapolar um pouco o que os dados sugerem.
-
-
-### Distribuição do modelo (opcional)
-
-Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
-em um sistema inteligente.
-
-### Modelo de Extra (associação)
+# Modelo de Extra (associação)
 Modelo foi criado para responder a pergunta: quais os top 10 atributos aparecem mais frequente divididos por regiao quando a pessoa trabalha com dados?
+
+- [Código](assets/Google Colab/AssociationModel.ipynb)
 
 Resultados: 
 Região: Sudeste
@@ -526,6 +516,19 @@ Região: Sudeste
 
 Interpretação
 Não foram criadas regras da região Norte e Centro Sul, possivelmente poissivelmente pois não há muitos cientistas de dados nessas regiões e por isso nenhuma regra ou poucas foram criadas para essas regiões.
+
+# Análise comparativa dos modelos
+
+Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
+modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
+e extrapolar um pouco o que os dados sugerem.
+
+
+### Distribuição do modelo (opcional)
+
+Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
+em um sistema inteligente.
+
 
 ## 8. Conclusão
 
