@@ -9,5 +9,4 @@ Liste os artefatos produzidos, com suas localizaçãoes e descrição do conteú
 * `/Results Second Model` - Pasta com os resultados dos Primeiro modelo já induzido
 * `/data` - Pasta com os dados do projeto (principalmente os .csv)
 * `/models` - Pasta com link dos modelos já induzidos
-* 
 
