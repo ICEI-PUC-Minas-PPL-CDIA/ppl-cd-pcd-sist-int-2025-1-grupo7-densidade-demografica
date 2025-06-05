@@ -318,8 +318,8 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.   
  
-[Código modelo 1](/assets/Google Colab/DecisionTreeModel.ipynb)     
-[Resultados modelo 1](/assets/Results First Model/Read.md)      
+[Código modelo 1](/assets/Google%20Colab/DecisionTreeModel.ipynb)   
+[Resultados modelo 1](/assets/Results%20First%20Model/Read.md)  
 
 
 ## **Interpretação do modelo 1**      
