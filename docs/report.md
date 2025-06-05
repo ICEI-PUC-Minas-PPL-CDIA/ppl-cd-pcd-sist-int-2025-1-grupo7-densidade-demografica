@@ -35,15 +35,25 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 - [Problema](#problema)
 
-- [Objetivo geral](#Objetivo_geral)
+- [Objetivo geral](#Objetivo-geral)
 
 - [Justificativas](#Justificativas)
 
-- [Público alvo](#Público_alvo)
+- [Público alvo](#Público-alvo)
 
-- [Análise exploratórida dos dados](#Análise_exploratórida_dos_dados)
+- [Análise exploratórida dos dados](#Análise-exploratórida-dos-dados)
 
-- 
+- [Descrição de dados](#Descrição-de-dados)
+
+	-[Graficos](##Graficos)
+
+- [Modelo 1: Árvore de Decisão](#Modelo-1:-Árvore-de-Decisão)
+
+- [Modelo 2: Random Forest](#Modelo-2:-Random-Forest)
+
+- [Análise comparativa dos modelos](#Análise-comparativa-dos-modelos)
+
+- [Conclusão](#8.-Conclusão)
 
 
 
