@@ -191,8 +191,8 @@ Main Data Base
 
 **Graficos**
 
-[Acesse os graficos aqui](/assets/Grafico/graficos.md)   
-[Acesse os código dos graficos aqui](/src/Update_graphics.ipynb)   
+[Acesse os graficos aqui](/assets/Grafico/graficos.md)     
+[Acesse os código dos graficos aqui](/src/Update_graphics.ipynb)     
 
 ## Preparação dos dados
 Levando em conta a pergunta orientada a dados (Qual o nível predominante dos profissionais que trabalham com dados? (junior, pleno, senior)), as hipóteses levantadas foram:   
@@ -318,8 +318,8 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.   
  
-[Código modelo 1](/assets/Google Colab/DecisionTreeModel.ipynb)
-[Resultados modelo 1](/assets/Results First Model/Read.md)   
+[Código modelo 1](/assets/Google Colab/DecisionTreeModel.ipynb)     
+[Resultados modelo 1](/assets/Results First Model/Read.md)      
 
 
 ## **Interpretação do modelo 1**      
