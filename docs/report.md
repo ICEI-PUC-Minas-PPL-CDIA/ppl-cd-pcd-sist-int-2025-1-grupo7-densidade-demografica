@@ -49,7 +49,7 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 - [Modelo 2: Random Forest](#Modelo-2-Random-Forest)
 
-- [Modelo de Extra (associação)](#modelo-de-extra-associacao)
+- [Modelo Extra associação](#Modelo-Extra-associação)
 
 - [Análise comparativa dos modelos](#Análise-comparativa-dos-modelos)
 
@@ -494,7 +494,7 @@ O modelo é razoável porém precisa ser melhorado, ele continua tendo dificulda
 
 ---
 
-# Modelo de Extra (associação)
+# Modelo Extra associação
 Modelo foi criado para responder a pergunta: quais os top 10 atributos aparecem mais frequente divididos por regiao quando a pessoa trabalha com dados?
 
 - [Código](assets/Google Colab/AssociationModel.ipynb)
