@@ -45,11 +45,9 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 - [Descrição de dados](#Descrição-de-dados)
 
-	-[Graficos](##Graficos)
+- [Modelo 1: Árvore de Decisão](#modelo-1-arvore-de-decisao)
 
-- [Modelo 1: Árvore de Decisão](#Modelo-1:-Árvore-de-Decisão)
-
-- [Modelo 2: Random Forest](#Modelo-2:-Random-Forest)
+- [Modelo 2: Random Forest](#Modelo-2-Random-Forest)
 
 - [Análise comparativa dos modelos](#Análise-comparativa-dos-modelos)
 
