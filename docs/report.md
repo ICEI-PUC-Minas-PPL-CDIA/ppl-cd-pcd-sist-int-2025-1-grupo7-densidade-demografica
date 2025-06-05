@@ -31,6 +31,20 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 - [Introdução](#introdução)
 
+- [Contextualização](#contextualização)
+
+- [Problema](#problema)
+
+- [Objetivo geral](#Objetivo_geral)
+
+- [Justificativas](#Justificativas)
+
+- [Público alvo](#Público_alvo)
+
+- [Análise exploratórida dos dados](#Análise_exploratórida_dos_dados)
+
+- 
+
 
 
 ## Introdução
