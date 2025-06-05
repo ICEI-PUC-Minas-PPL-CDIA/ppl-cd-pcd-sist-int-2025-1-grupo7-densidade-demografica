@@ -49,6 +49,8 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 - [Modelo 2: Random Forest](#Modelo-2-Random-Forest)
 
+- [Modelo de Extra (associação)](#modelo-de-extra-associacao)
+
 - [Análise comparativa dos modelos](#Análise-comparativa-dos-modelos)
 
 - [Conclusão](#8-Conclusão)
