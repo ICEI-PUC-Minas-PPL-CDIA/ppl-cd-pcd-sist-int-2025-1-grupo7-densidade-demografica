@@ -106,45 +106,7 @@ Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a 
 
 ## Análise exploratórida dos dados
 
-###    Dicionário de dados
-**Main Data Base**
-
-| Data                                                                                                                      | Description                                                                                   | Data Type                                             |
-|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| Id                                                                                                                        | O número da identidade de cada pessoa que respondeu à pesquisa                                | Dados qualitativos (polinomial não ordinal)           |
-| Idade                                                                                                                     | Idade da pessoa que respondeu à pesquisa                                                      | Dados quantitativos (discretos)                       |
-| Faixa idade                                                                                                               | A qual faixa de idade a pessoa pertence, sendo que cada faixa possui 4 anos entre uma e outra | Dados qualitativos (polinomial ordinal)               |
-| Gênero                                                                                                                    | Gênero da pessoa que respondeu à pesquisa                                                     | Dados qualitativos (binomial simétrico)               |
-| Cor/raça/etnia                                                                                                            | Cor de pele/raça/etnia da pessoa que respondeu à pesquisa                                     | Dados qualitativos (polinomial não ordinal)           |
-| PCD                                                                                                                       | Se a pessoa que respondeu à pesquisa possui alguma deficiência                                | Dados qualitativos (binomial simétrico)               |
-| Vive no Brasil                                                                                                            | Se a pessoa que respondeu à pesquisa mora no Brasil ou não                                    | Dados qualitativos (binomial assimétrico)             |
-| Estado onde mora                                                                                                          | Qual estado nacional a pessoa que respondeu à pesquisa mora                                   | Dados qualitativos (polinomial não ordinal)           |
-| UF onde mora                                                                                                              | Sigla do estado de onde a pessoa mora                                                         | Dados qualitativos (polinomial não ordinal)           |
-| Região onde Mora                                                                                                          | Qual das 5 regiões do Brasil a pessoa mora (Norte, Nordeste, Centro-Oeste, Sudeste e Sul)     | Dados qualitativos (polinomial não ordinal)           |
-| Nível de Ensino                                                                                                           | Qual o nível de ensino superior da pessoa                                                     | Dados qualitativos (polinomial ordinal)               |
-| Área de Formação                                                                                                          | Qual das áreas disponíveis na base de dados a pessoa se formou                                | Dados qualitativos (polinomial ordinal)               |
-| Qual sua situação atual de trabalho?                                                                                      | Se a pessoa está trabalhando, procurando emprego ou desempregada                              | Dados qualitativos (polinomial ordinal)               |
-| Setor                                                                                                                     | Em qual área do setor de trabalho a pessoa atua na empresa                                    | Dados qualitativos (polinomial ordinal)               |
-| Número de Funcionários                                                                                                    | Quantos funcionários tem na empresa em que a pessoa trabalha                                  | Dados quantitativos (discretos)                       |
-| Cargo Atual                                                                                                               | Qual o cargo da pessoa dentro da área de ciência de dados                                     | Dados qualitativos (polinomial ordinal)               |
-| Nível                                                                                                                     | Há quanto tempo a pessoa está trabalhando no seu setor                                        | Dados qualitativos (polinomial ordinal)               |
-| Faixa salarial                                                                                                            | Qual o salário médio mensal da pessoa                                                         | Dados qualitativos (polinomial ordinal)               |
-| Quanto tempo de experiência na área de dados você tem?                                                                    | Quanto tempo a pessoa trabalha na área de ciência de dados                                    | Dados qualitativos (polinomial ordinal)               |
-| Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? | Quanto tempo a pessoa tem em outras áreas que contribuem para a atuação com dados             | Dados qualitativos (polinomial não ordinal)           |
-| Qual o número aproximado de pessoas que atuam com dados na sua empresa hoje?                                              | Número de funcionários que trabalham com dados na empresa                                     | Dados quantitativos (discretos)                       |
-| Cientista de Dados/Data Scientist                                                                                         | Se a pessoa é ou não cientista de dados                                                       | Dados qualitativos (binomial assimétrico)             |
-| Quantidade de Cursos no estado onde mora                                                                                  | A quantidade de cursos de ciência de dados que tem na UF da pessoa                            | Dados quantitativos (discretos)                       |
-
-**Auxiliary Data Base**
-
-| Data               | Description                                                                                   | Data Type                                       |
-|--------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| CO_CURSO           | Código identificador do curso                                                                 | Dados qualitativos (polinomial não ordinal)     |
-| UF                 | Nome da UF onde a pessoa mora                                                                 | Dados qualitativos (polinomial não ordinal)     |
-| NO_CURSO           | Nome do curso                                                                                 | Dados qualitativos (polinomial não ordinal)     |
-| TP_GRAU_ACADEMICO  | Identifica o grau acadêmico do curso (ex.: Bacharelado, Licenciatura, Tecnológico), com base em um código numérico. | Dados qualitativos (polinomial ordinal)         |
-| CO_CINE_ROTULO     | Código que representa a área de conhecimento do curso segundo a Classificação Internacional da Educação (CINE/ISCED). | Dados qualitativos (polinomial não ordinal)     |
-| TP_NIVEL_ACADEMICO | Representa o nível de formação acadêmica do curso (ex.: Graduação, Mestrado, Doutorado), codificado numericamente. | Dados qualitativos (polinomial ordinal)         |
+###    [Dicionário de dados](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/5ba290a5ebeca9e754fb0cf9e0033de5c9994786/assets/Data%20Dictionary/Readme.md)
 
 
 ###    Descrição de dados
