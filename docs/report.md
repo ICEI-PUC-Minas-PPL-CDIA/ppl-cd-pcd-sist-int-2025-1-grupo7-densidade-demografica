@@ -483,9 +483,8 @@ Não foram criadas regras da região Norte e Centro Sul, possivelmente poissivel
 
 # Análise comparativa dos modelos
 
-Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
-modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
-e extrapolar um pouco o que os dados sugerem.
+O modelo decision tree and random forest não estão muito separados um do outro, sendo que o random forest utiliza diversas decisões trees.
+A decision tree pega todos os atributos disponíveis e faz um treinamento usando parte dos dados (geralmente entre 70) mas como utiliza de todos os atributos isso pode causar um over fitting mas conseguindo uma acuracy boa, enquanto isso a random forest pega todos os atributos e os separa em diferentes decision trees (onde pode ser colocado até o mesmo atributos várias vezes numa árvore de decisão) e usando disso ele pega dicas de cada árvore e no final cria um modelo no qual e geralmente melhor que a árvore de decisão e tem menos chance de ocorrer over fitting e obtendo uma acuracy mais consistente melhor mas sendo mais pesada
 
 
 ### Distribuição do modelo (opcional)
