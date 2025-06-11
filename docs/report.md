@@ -411,7 +411,7 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.      
 
-[Código modelo 2](/assets/Googl%20Colab/RandomForestModel.ipynb)   
+[Código modelo 2](/assets/Google%20Colab/RandomForestModel.ipynb)   
 [Resultados modelo 2](/assets/Results%20Second%20Model/read.md) 
   
 ## **Interpretação do modelo 2**   
