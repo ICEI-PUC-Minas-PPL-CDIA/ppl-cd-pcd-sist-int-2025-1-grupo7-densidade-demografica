@@ -411,9 +411,8 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.      
 
-#### [Código Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/ea368544c010d2822ca19941f34b07f9699fb303/assets/Google%20Colab/DecisionTreeModel.ipynb)
-
-#### [Resultados Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica/blob/c99806dc6e4d3b28cbecc029cab1a8da37526549/assets/Results%20Second%20Model/read.md)
+[Código modelo 1](assets/Googl%20Colab/RandomForestModel.ipynb)   
+[Resultados modelo 1](assets/Results%20Second%20Model/read.md) 
   
 ## **Interpretação do modelo 2**   
 
