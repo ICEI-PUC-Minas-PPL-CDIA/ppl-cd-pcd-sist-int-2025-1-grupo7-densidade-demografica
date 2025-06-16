@@ -1,6 +1,6 @@
 # **Resultados Modelo 1**   
 
-- Visualização da matriz de confusão (treino)
+- Visualização da matriz de confusão (treino)   
 ![image](https://github.com/user-attachments/assets/19165905-7c22-4256-8f58-4870b81af568)     
 Treino: 0.7289 -> O modelo acerta aproximadamente 72.9%.     
 
