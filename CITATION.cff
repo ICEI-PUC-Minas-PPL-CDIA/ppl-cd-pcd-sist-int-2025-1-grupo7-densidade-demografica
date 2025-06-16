@@ -1,7 +1,7 @@
 cff-version: 1.0.1
-title: Análise de nível profissional das pessoas que trabalham com dados.
 message: Por favor, cite o repositório utilizando estes metadados.
-
+title: Análise de nível profissional das pessoas que trabalham com dados
+type: Software 
 authors:
  - given-names: Ian Vinicius
     name-particle: Marinho
@@ -43,7 +43,7 @@ authors:
 
  - name: 'Pontifícia Universidade Católica de Minas Gerais'
     city: Belo Horizonte
-    country: BR
+    country: Brazil
     post-code: '30140108'
     website: 'https://www.pucminas.br/'
     address: Rua Cláudio Manoel 1162 (Savassi)
