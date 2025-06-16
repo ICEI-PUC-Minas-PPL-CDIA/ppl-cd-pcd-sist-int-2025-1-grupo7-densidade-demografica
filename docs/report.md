@@ -325,6 +325,7 @@ cm.score(X_teste, y_teste)`
 
 ## **Interpretação do modelo 1**      
 - O modelo utilizado foi o `DecisionTreeClassifier` para a árvore de decisão.
+- O modelo utilizou o `GridSearchCV` para a escolha dos melhores hiperparâmetros.   
 - Os parâmetros principais `max_depth`, `test_size=0.25`. (Para o ajuste da profundidade da árvore e a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino).  
 - O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.
 - Em segundo lugar, os dados relevantes foram transformados em numéricos, para a execução da árvore de decisão.
@@ -339,14 +340,14 @@ cm.score(X_teste, y_teste)`
 ## **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)**   
 - Quanto tempo de experiência na área de dados você tem? (59%)  
 - Faixa Salarial (32%)  
-- Idade (0.4%)   
-- Cargo Atual (0.2%)     
-- Nível de Ensino (0.1%)  
-- Área de Formação (0.08%)  
-- Cor/raca/etnia (0.07%)  
-- UF onde mora (0.03%)
-- Setor (0.03%)       
-- Faixa idade (0.01%)             
+- Idade (4%)   
+- Cargo Atual (2%)     
+- Nível de Ensino (1%)  
+- Área de Formação (0.8%)  
+- Cor/raca/etnia (0.7%)  
+- UF onde mora (0.3%)
+- Setor (0.3%)       
+- Faixa idade (0.1%)             
 - Gênero (0%)
 - Vive no Brasil (0%)           
 - PCD (0%)         
@@ -379,34 +380,53 @@ Foi dividido o dataset em conjuntos de treino e teste usando a função `train_t
 - **Parâmetros utilizados:**            
 Foi definido `test_size=0.25` -> uma quantidade de dados para treino de 75% e 25% vão para teste.    
 `modelo.feature_importances_` -> para a avaliação dos atributos de mais importância na tomada de decisão do modelo.  
-`ccp_alpha=0.002` -> controle de overfitting.  
-`max_depth=5` -> para a profundidade da árvore.  
-`n_estimators=20` -> para o número de árvores criadas.   
-`min_impurity_decrease=0.001` -> controle crescimento da árvore.  
+`'ccp_alpha': [0.0, 0.01]` -> controle de overfitting.  
+`'max_depth': [None, 5, 20]` -> para a profundidade da árvore.  
+`'n_estimators': [10, 20, 50]` -> para o número de árvores criadas.   
+`'min_impurity_decrease'` -> controle crescimento da árvore.  
 
 - **Trechos do Código:**  
 ```python
-`X_treino, X_teste, y_treino, y_teste = train_test_split(df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)
+`# Separação em X e Y
+X_treino, X_teste, y_treino, y_teste = train_test_split(
+    df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)
 
-modelo = RandomForestClassifier(n_estimators=20,criterion='gini', max_depth=5, random_state=42, ccp_alpha=0.002, min_impurity_decrease=0.001)
-modelo.fit(X_treino, y_treino)`
+# Grade de hiperparâmetros
+param_grid = {
+    'n_estimators': [10, 20, 50],
+    'criterion': ['gini', 'entropy'],
+    'max_depth': [None, 5, 20],
+    'min_impurity_decrease': [0.0, 0.001],
+    'ccp_alpha': [0.0, 0.01]
+}
+
+# Modelo base
+clf = RandomForestClassifier(random_state=42)
+
+# Grid Search com validação cruzada
+grid_search = GridSearchCV(estimator=clf,
+                           param_grid=param_grid,
+                           scoring='accuracy',
+                           cv=5,
+                           n_jobs=-1)
+
+# Treinamento com Grid Search
+grid_search.fit(X_treino, y_treino)
+
+# Melhor modelo encontrado
+melhor_modelo = grid_search.best_estimator_`
 ```
 
 ```python
-`# Obtemos a importância das features
-importancias = modelo.feature_importances_
-
-# Associamos aos nomes das colunas
+`# Importância das features
+importancias = melhor_modelo.feature_importances_
 df_importancia = pd.DataFrame({
     'Feature': X_treino.columns,
     'Importância': importancias
-})
+}).sort_values(by='Importância', ascending=False)
 
-# Ordenamos do mais importante para o menos
-df_importancia = df_importancia.sort_values(by='Importância', ascending=False)
-
-# Exibimos
-print(df_importancia`
+print("\nImportância das Features:")
+print(df_importancia)`
 ```
 
 ```python
@@ -423,47 +443,48 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.      
 
-[Código modelo 2](/assets/Google%20Colab/RandomForestModel.ipynb)   
+[Código modelo 2](/src/RandomForestModel(1)(1).ipynb)   
 [Resultados modelo 2](/assets/Results%20Second%20Model/read.md) 
   
 ## **Interpretação do modelo 2**   
 
 - O modelo utilizado foi o `RandomForestClassifier` para a Floresta aleatória.
+- O modelo utilizou o `GridSearchCV` para a escolha dos melhores hiperparâmetros.
 - O principal objetivo é a classificação dos níveis (Júnior, Pleno, Sênior), com base em atributos do perfil do indivíduo.   
-- Os parâmetros principais `n_estimators=20`, `max_depth=5`, `test_size=0.25`, `ccp_alpha=0.002` (Para o número de árvores, ajuste da profundidade da árvore, a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino, e para o controle do overfitting do modelo).  
+- Os parâmetros principais `n_estimators`, `max_depth`, `test_size=0.25`, `ccp_alpha` (Para o número de árvores, ajuste da profundidade da árvore, a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino, e para o controle do overfitting do modelo).  
 - O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.  
 - Em segundo lugar, ele define os níveis profissionais e de ensino em números crescentes e define o gênero para número binários (0 = Júnior, 1 = Pleno e 2 = Sênior) (0 = Masculino e 1 = Feminino).   
 - O modelo apresenta uma divisão de dados aleatória para cada árvore de decisão formada, em que cada nó um conjunto aleatório de atributos é testado.    
 - O modelo possui como atributo mais influente para a tomada de decisão, o Quanto tempo de experiência na área de dados e a Faixa Salarial.    
-- O modelo apresenta uma diferença de apenas 3% entre treino e teste, fator que indica que o modelo não apresenta overfitting.   
-- Pleno apresenta uma queda na precisão, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
-- O modelo em sí apresenta 67% de acerto nas classificações de níveis.   
+- O modelo apresenta uma diferença de 22% entre treino e teste, fator que indica que o modelo apresenta overfitting.   
+- Pleno apresenta uma queda na precisão e recall, demonstrando que o modelo possui dificuldade em acertar e identificar a classe Pleno.   
+- O modelo em sí apresenta 70% de acerto nas classificações de níveis.   
 
 ## **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)** 
-- Quanto tempo de experiência na área de dados você tem? (41%)  
-- Faixa Salrial (23%)  
-- Idade (13%)   
-- Faixa Idade (7%)     
-- Nível de Ensino (7%)  
-- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (3%)       
-- Cargo Atual (2%)       
-- Setor (1%)    
-- UF onde mora (0.8%)    
-- Gênero (0.7%)     
-- Área de Formação (0.4%)    
-- Existe faculdade no Estado (0.3%)   
-- PCD (0.08%)      
-- Cor/raca/etnia (0.05%)   
+- Quanto tempo de experiência na área de dados você tem? (25%)  
+- Faixa Salrial (20%)  
+- Idade (10%)   
+- Setor (6%)       
+- Nível de Ensino (6%)  
+- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (6%)   
+- Faixa idade (6%)    
+- Cargo Atual (5%)        
+- UF onde mora (5%)    
+- Área de Formação (4%)   
+- Cor/raca/etnia (3%)   
+- Existe faculdade no Estado (2%)   
+- Gênero (1%)    
+- PCD (0.05%)         
 - Vive no Brasil (0%)   
-![image](https://github.com/user-attachments/assets/1cefc5c4-3a94-4b78-a2f9-e2197bed3aba)   
-
+![image](https://github.com/user-attachments/assets/661fe0e8-5db3-405f-b309-5245f005092b)     
+  
 **Possíveis Melhorias:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
 - Remover mais atributos que sejam irrelevantes.    
 - Balancear os dados.  
 
 ## **Conclusão:**   
-O modelo é razoável porém precisa ser melhorado, ele continua tendo dificuldade na identificação de classes, fator o qual diminui a acurácia geral e compromete no resultado final do modelo. Um dos principais fatores que levam ao desequilibrio do modelo, se deve a quantidade de atributos utilizados. O modelo possui baixa precisão na classe Pleno, fator que precisa ser melhorado. Logo com certas melhorias o modelo tende a se tornar equilibrado para a classificação dos níveis profissionais.
+O modelo tem uma boa acurácia porém precisa ser melhorado, já que possui overfitting, ele continua tendo dificuldade na identificação de classes, fator o qual diminui a acurácia geral e compromete no resultado final do modelo. Um dos principais fatores que levam ao desequilibrio do modelo, se deve a quantidade de atributos utilizados. O modelo possui baixa precisão na classe Pleno, fator que precisa ser melhorado. Logo com certas melhorias e com o controle do overfitting o modelo tende a se tornar equilibrado para a classificação dos níveis profissionais.
 
 ---
 
