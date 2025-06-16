@@ -5,6 +5,7 @@ Este diretório mantém os artefatos relatório à modelagem de dados do projeto
 Os principais documentos a serem produzidos são:
 
 * `Auxiliar_data_base_courses.csv`
+	*Base Auxiliar	 
 * `Filtragem.csv`
 	* csv com nome simplificado para usar nos modelos induzidos (Filtragem transformada)  
 * `Filtragem_Transformada(2).csv`
