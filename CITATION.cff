@@ -1,16 +1,63 @@
 cff-version: 1.0.1
+title: Análise de nível profissional das pessoas que trabalham com dados.
 message: Por favor, cite o repositório utilizando estes metadados.
-title: Repositório modelo para a disciplina de Projeto em Ciência de Dados I - Sistemas Inteligentes.
+
 authors:
-   - name-suffix: Professor
+ - given-names: Ian Vinicius
+    name-particle: Marinho
+    family-names: Malta
+    name-suffix: Aluno
+    email: ian.malta@sga.pucminas.br
+    affiliation: Pontifícia Universidade Católica de Minas Gerais
+
+ - given-names: João Gabriel
+    name-particle: de Melo
+    family-names: Neves
+    name-suffix: Aluno
+    email: jgmneves@sga.pucminas.br
+    affiliation: Pontifícia Universidade Católica de Minas Gerais
+
+ - given-names: Thiago
+    name-particle: Couto
+    family-names: Ferreira
+    name-suffix: Aluno
+    email: thiago.couto@sga.pucminas.br
+    affiliation: Pontifícia Universidade Católica de Minas Gerais
+
+ - given-names: Thales
+    name-particle: Ribeiro
+    family-names: Melo
+    name-suffix: Aluno
+    email: thales.melo@sga.pucminas.br
+    affiliation: Pontifícia Universidade Católica de Minas Gerais
+
+ - name-suffix: Professor
     affiliation: PUC Minas
     family-names: de Paula
     given-names: Hugo
+
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Curto
+    given-names: Hayala
+
+ - name: 'Pontifícia Universidade Católica de Minas Gerais'
+    city: Belo Horizonte
+    country: BR
+    post-code: '30140108'
+    website: 'https://www.pucminas.br/'
+    address: Rua Cláudio Manoel 1162 (Savassi)
+    date-start: '2024-03-5'
+    date-end: '2024-06-27'
+
 keywords:
   - Ciência de Dados
   - Jupyter Notebooks
   - Aprendizado de Máquina
-repository-code:
+
+repository-code: >-
+https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica
+
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-30
