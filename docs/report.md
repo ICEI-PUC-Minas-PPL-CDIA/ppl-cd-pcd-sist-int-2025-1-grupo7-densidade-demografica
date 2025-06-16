@@ -260,27 +260,37 @@ Foi dividido o dataset em conjuntos de treino e teste usando a função
 - **Parâmetros utilizados:**            
 Foi definido `test_size=0.25` -> uma quantidade de dados para treino de 75% e 25% vão para teste.    
 `modelo.feature_importances_` -> para a avaliação dos atributos de mais importância na tomada de decisão do modelo.  
-`ccp_alpha=0.006` -> controle de overfitting.  
-`max_depth=5` -> para a profundidade da árvore.
+`'min_samples_split': [2, 5, 10]` -> mínimo de amostras para dividir um nó interno da árvore.   
+`'max_depth': [None, 5, 10, 15]` -> para identificar qual é a melhor profundidade para a árvore.   
 
 - **Trechos do Código:**  
 ```python
-`from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+`X_treino, X_teste, y_treino, y_teste = train_test_split(df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42)
 
-X_treino, X_teste, y_treino, y_teste = train_test_split(
-    df.drop(columns=['Nível']), df['Nível'], test_size=0.25, random_state=42
-)
+# Define o classificador base e a grade de parâmetros
+clf = DecisionTreeClassifier(random_state=42)
 
-modelo = DecisionTreeClassifier(
-    criterion='gini', ccp_alpha=0.006, max_depth=5, random_state=42
-)
-modelo.fit(X_treino, y_treino)`
+param_grid = {
+    'criterion': ['gini', 'entropy'],
+    'max_depth': [None, 5, 10, 15],
+    'min_samples_split': [2, 5, 10],
+}
+
+# Cria e executa o Grid Search
+grid_search = GridSearchCV(estimator=clf,
+                           param_grid=param_grid,
+                           scoring='accuracy',
+                           cv=5)
+
+grid_search.fit(X_treino, y_treino)
+
+# Usa o melhor modelo encontrado
+modelo_otimizado = grid_search.best_estimator_`
 ```
 
 ```python
 `# Obtemos a importância das features
-importancias = modelo.feature_importances_
+importancias = modelo_otimizado.feature_importances_
 
 # Associamos aos nomes das colunas
 df_importancia = pd.DataFrame({
@@ -292,7 +302,7 @@ df_importancia = pd.DataFrame({
 df_importancia = df_importancia.sort_values(by='Importância', ascending=False)
 
 # Exibimos
-print(df_importancia`
+print(df_importancia)`  
 ```  
 
 ```python
@@ -309,39 +319,41 @@ cm.score(X_teste, y_teste)`
 ```    
 - Mostra a acurácia e as matrizes de confusão de teste e treino.   
  
-[Código modelo 1](/assets/Google%20Colab/DecisionTreeModel.ipynb)   
+[Código modelo 1](/src/DecisionTreeModel.ipynb)   
 [Resultados modelo 1](/assets/Results%20First%20Model/Read.md)  
 
 
 ## **Interpretação do modelo 1**      
 - O modelo utilizado foi o `DecisionTreeClassifier` para a árvore de decisão.
-- Os parâmetros principais `max_depth=5`, `test_size=0.25`. (Para o ajuste da profundidade da árvore e a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino).  
+- Os parâmetros principais `max_depth`, `test_size=0.25`. (Para o ajuste da profundidade da árvore e a separação de 25% dos dados para o conjunto de teste e 75% dos dados para o conjunto de treino).  
 - O modelo primeiramente faz uma limpeza de dados (dropando atributos) para que os atributos irrelevantes não influenciem na tomada de decisão.
 - Em segundo lugar, os dados relevantes foram transformados em numéricos, para a execução da árvore de decisão.
 - O atributo nível profissional e de ensino é transformado em númerico crescente, enquanto o de gênero é transformado em númerico binário (0 = Júnior, 1 = Pleno e 2 = Sênior) (0 = Masculino e 1 = Feminino). 
-- O atributo que mais influenciou na tomada de decisão do modelo, foi a Faixa Salarial.
+- O atributo que mais influenciou na tomada de decisão do modelo, foi o Quanto tempo de experiência na área de dados e a Faixa Salarial.
+- Os atributos que mais influenciaram, fizeram com que o modelo não utilizasse outros atributos, já que a partir desses atributos o modelo já tomava a decisão das classes.
 - A partir, da ánalise da precisão de treinos e testes, é possível observar que o modelo é mais adequado para identificar Juniores e Seniores do que Plenos. Essa ánalise se deve a precisão e o desempenho que os níveis obtiveram.   
-- O modelo apresenta overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um pequeno overfitting.   
+- O modelo apresenta um leve overfitting, devido ao fato do treino possuir acurácia maior que o teste, porém pela diferença entre treino e teste não ser alta (aproximadamente 5%), ele apresenta somente um leve overfitting.   
 - Pleno por apresentar um baixo recall, se torna mais díficil de identificar, fator que leva o modelo a confundir Pleno com as outras classes algumas vezes.   
 - O modelo em sí apresenta 68% de acerto nas classificações de níveis.
  
 ## **Conjunto de Dados utilizados (Ordem decrescente de importância aproximada)**   
-- Quanto tempo de experiência na área de dados você tem? (62%)  
-- Faixa Salrial (33%)  
+- Quanto tempo de experiência na área de dados você tem? (59%)  
+- Faixa Salarial (32%)  
 - Idade (0.4%)   
-- Faixa Idade (0%)     
-- Nível de Ensino (0%)  
-- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (0%)       
-- Cargo Atual (0%)       
-- Setor (0%)    
-- UF onde mora (0%)    
-- Gênero (0%)     
-- Área de Formação (0%)    
-- Existe faculdade no Estado (0%)   
-- PCD (0%)      
-- Cor/raca/etnia (0%)   
-- Vive no Brasil (0%)   
-![image](https://github.com/user-attachments/assets/3c8d24c8-f3f3-469f-80e0-d866af9418c5)   
+- Cargo Atual (0.2%)     
+- Nível de Ensino (0.1%)  
+- Área de Formação (0.08%)  
+- Cor/raca/etnia (0.07%)  
+- UF onde mora (0.03%)
+- Setor (0.03%)       
+- Faixa idade (0.01%)             
+- Gênero (0%)
+- Vive no Brasil (0%)           
+- PCD (0%)         
+- Quanto tempo de experiência na área de TI/Engenharia de Software você teve antes de começar a trabalhar na área de dados? (0%)
+- Existe faculdade no Estado (0%)
+![image](https://github.com/user-attachments/assets/06102fbf-0915-4615-a115-1838cce33ae2)    
+ 
 
 **Possíveis Melhoras:**  
 - Ajustes hiperparâmetros (ajudar a diferenciação entre Júnior, Pleno e Sênior).  
@@ -349,7 +361,7 @@ cm.score(X_teste, y_teste)`
 - Balancear os dados.
 
 ## **Conclusão:**   
-O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting . Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
+O modelo é razoável, porém pode ser melhorado. Ele apresenta diversas falhas, principalmente na classificação dos níveis, as quais diminuem a porcentagem de acertos. O modelo também apresenta acerto maiores no treino do que nos testes, sendo estes aproximados, indicando um leve overfitting. Logo, com certos ajustes e melhorias, o modelo tende a se tornar equilibrado.
 
 ---
 
