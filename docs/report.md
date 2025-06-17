@@ -59,22 +59,23 @@ _**Resumo**: Este projeto tem como objetivo identificar quais atributos mais qua
 ## Introdução
 
 
-
-Com o crescimento e procura da área de Ciência de Dados surge uma necessidade das empresas de localizar onde estão esses profissionais e quais são suas qualificações. Portanto, nossa empresa visa justamente isso: que o empregador saiba onde localizá-los e quais lugares têm a melhor qualificação.
+Com a crescente importância da área de dados na tomada de decisões estratégicas, torna-se fundamental que os profissionais que atuam nesse setor sejam altamente qualificados. Nesse cenário, é essencial que os líderes das organizações — como CEOs e diretores — tenham visibilidade sobre a senioridade da equipe de dados, a fim de identificar lacunas e planejar contratações com mais assertividade. Pensando nisso, nossa empresa propõe uma solução que permite identificar, de forma precisa, o nível de experiência dos profissionais (como Júnior, Pleno ou Sênior), oferecendo um suporte confiável para decisões relacionadas à gestão de talentos e estruturação de times.
 
 ###    Contextualização
 
 
--Nos últimos anos, a Ciência de Dados tornou-se uma das áreas mais promissoras no mercado de tecnologia, impulsionada pelo crescimento do volume de dados e pela necessidade de extração de informações estratégicas para tomada de decisões. Empresas de diversos setores passaram a investir na contratação de Cientistas de Dados para aprimorar seus processos, otimizar operações e obter insights valiosos a partir da análise de grandes conjuntos de dados.  
+-Nos últimos anos, a Ciência de Dados consolidou-se como uma das áreas mais promissoras dentro do setor de tecnologia, impulsionada pelo aumento exponencial no volume de dados e pela necessidade de transformá-los em insights estratégicos. Empresas de diferentes segmentos passaram a investir fortemente em profissionais de dados — como cientistas, engenheiros e analistas — para aprimorar seus processos, otimizar resultados e sustentar decisões mais embasadas. 
 
--No entanto, apesar da alta demanda por esses profissionais, a distribuição geográfica de Cientistas de Dados no Brasil não é homogênea. Alguns municípios apresentam uma concentração elevada de especialistas, enquanto outros enfrentam escassez de mão de obra qualificada. Essa desigualdade dificulta a tomada de decisão por parte de novas empresas que desejam ingressar nesse setor, pois nem sempre há informações acessíveis sobre onde estão localizados os profissionais mais capacitados e quais regiões oferecem melhores oportunidades de crescimento.  
+-Apesar da alta demanda, muitas organizações enfrentam um desafio recorrente: o desequilíbrio na composição de suas equipes, seja pela concentração de profissionais próximos à aposentadoria, sem sucessores preparados, ou pela predominância de perfis júnior, ainda em fase de desenvolvimento técnico.
 
--Diante desse cenário, a nossa empresa desenvolve um sistema inteligente capaz de mapear a densidade de Cientistas de Dados por município, facilitando a identificação de regiões saturadas ou carentes desses profissionais. Além disso, o sistema permite uma análise aprofundada das qualificações exigidas pelo mercado, auxiliando empresas a encontrarem especialistas adequados para suas necessidades. Dessa forma, contribuímos para um melhor planejamento estratégico tanto do setor empresarial quanto do setor educacional, promovendo um equilíbrio mais eficiente entre oferta e demanda no mercado de Ciência de Dados.
+-Diante desse contexto, nossa empresa desenvolveu um sistema inteligente que analisa e apresenta, de forma quantitativa, a distribuição de profissionais por nível de senioridade (Júnior, Pleno e Sênior). O objetivo é oferecer uma ferramenta estratégica para que as empresas possam manter uma equipe equilibrada em termos de experiência, prevenindo riscos futuros, como a escassez de mão de obra qualificada ou a perda de conhecimento institucional.
 
 ###    Problema
 
 
-O avanço da tecnologia e da inteligência artificial tem impulsionado a demanda por profissionais qualificados na área de Ciência de Dados. No entanto, a distribuição desses profissionais pelo território brasileiro ainda não é homogênea, dificultando tanto a alocação estratégica de novas empresas quanto a oferta educacional adequada para formar especialistas nessa área.
+Desenvolver um sistema inteligente capaz de identificar o nível de senioridade predominante entre os profissionais de dados dentro das empresas. O objetivo é fornecer uma ferramenta analítica que permita às organizações avaliar com precisão o grau de capacitação de suas equipes, auxiliando em decisões mais fundamentadas relacionadas à contratação, promoção, definição salarial e planejamento de sucessão.
+
+Por meio da análise de dados como tempo de experiência, cargos anteriores e histórico profissional, o sistema será capaz de demonstrar o nível de preparo dos colaboradores que atuam com dados na empresa. Essa análise não apenas contribui para decisões mais lógicas e assertivas, mas também oferece uma visão estratégica sobre a maturidade e equilíbrio da equipe como um todo — elementos fundamentais para a sustentabilidade da área de dados a longo prazo.
 
 ###    Objetivo geral
 
