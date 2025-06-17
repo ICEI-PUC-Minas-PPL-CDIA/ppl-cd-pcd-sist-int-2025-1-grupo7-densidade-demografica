@@ -102,7 +102,18 @@ Desenvolver um sistema inteligente para mostrar geograficamente a densidade de c
 -Por fim, ao integrar variáveis que qualificam um Cientista de Dados especializado, o sistema também possibilitará uma análise mais refinada das competências exigidas no mercado, auxiliando empresas na busca por profissionais com habilidades específicas. Dessa forma, o projeto se justifica não apenas pela inovação tecnológica envolvida, mas também pelo seu potencial impacto no desenvolvimento econômico e educacional do Brasil, promovendo um equilíbrio mais eficiente entre formação acadêmica, demanda do mercado e crescimento empresarial.
 
 ##    Público alvo
-Os CEOs e chefes de empresas novas na área de Ciencia de Dados, de tal forma a auxiliar essas novas empresas a iniciarem sua trajetória procurando profissionais qualificados e um município propenso para tal atividade.
+
+Gestores e tomadores de decisão de empresas que atuam na área de tecnologia e dados, como:
+
+ - Diretores e gerentes de Recursos Humanos
+
+ - Gestores de equipes de tecnologia e ciência de dados
+
+ - Líderes de inovação ou transformação digital
+
+ - Executivos de empresas que utilizam dados como ativos estratégicos
+
+Esse público tem interesse direto em estratégias de gestão de talentos, estruturação de equipes e planejamento de sucessão, especialmente em contextos onde a maturidade técnica e o equilíbrio entre níveis de senioridade são fundamentais para a sustentabilidade da operação.
 
 ## Análise exploratórida dos dados
 
