@@ -77,19 +77,9 @@ Desenvolver um sistema inteligente capaz de identificar o nível de senioridade 
 
 Por meio da análise de dados como tempo de experiência, cargos anteriores e histórico profissional, o sistema será capaz de demonstrar o nível de preparo dos colaboradores que atuam com dados na empresa. Essa análise não apenas contribui para decisões mais lógicas e assertivas, mas também oferece uma visão estratégica sobre a maturidade e equilíbrio da equipe como um todo — elementos fundamentais para a sustentabilidade da área de dados a longo prazo.
 
-###    Objetivo geral
+###    Objetivo
 
-Desenvolver um sistema inteligente para mostrar geograficamente a densidade de cientistas de dados por municipio e indicar quais municipios estão saturados para que empresas tenham uma maior facilidade de contratar cientistas de dados ao abrirem suas empresas.
-
-####    Objetivos específicos
-
-- Analisar os dados e por meio deles obter informações sobre a demanda do curso Ciência de dados nos estados do Brasil, sendo esse importante para o planejamento do local em que as novas empresas dessa área serão melhor alocadas.
-
-- Analisar os dados e por meio deles obter informações sobre o número de faculdades que atendem a Ciência de Dados nos estados do Brasil, de tal forma a ser importante para a implementação de tal nas regiões que ainda não se efetivou o curso em suas faculdades.
-
-- Produzir um sistema eficiente, capaz de gerar dados que possibilitam expor os municípios que apresentam maiores quantidades de Cientista de Dados qualificados.
-
-- Criar um sistema eficiente, o qual proporciona uma análise mais profunda sobre as qualidades necessárias para que um Cientista de Dados possa ser considerado especializado ( a partir de uma descrição de dados com variáveis).
+Desenvolver um sistema capaz de identificar o nível de qualificação de profissionais da área de dados por meio da análise de atributos específicos, utilizando modelos de aprendizado de máquina, com o intuito de auxiliar empresas na composição de equipes mais equilibradas e estrategicamente estruturadas.
 
 ###    Justificativas  
 
