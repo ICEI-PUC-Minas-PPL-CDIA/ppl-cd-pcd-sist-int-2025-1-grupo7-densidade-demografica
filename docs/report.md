@@ -539,28 +539,12 @@ Uma conclusão deve ter 3 partes:
 
 # REFERÊNCIAS
 
-Como um projeto de sistema inteligente não requer revisão bibliográfica, 
-a inclusão das referências não é obrigatória. No entanto, caso você 
-tenha utilizado referências na introdução ou deseje 
-incluir referências relacionadas às tecnologias, padrões, ou metodologias 
-que serão usadas no seu trabalho, relacione-as de acordo com a ABNT.
-
-Verifique no link abaixo como devem ser as referências no padrão ABNT:
-
-http://www.pucminas.br/imagedb/documento/DOC\_DSC\_NOME\_ARQUI20160217102425.pdf
-
-Por exemplo:
-
 **[1]** - DATA HACKERS. State of Data - Brasil 2023. Kaggle, 2023. Disponível em: https://www.kaggle.com/datasets/datahackers/state-of-data-brazil-2023. Acesso em: 2 de abril 2025.
 
 
 **[2]** - MONITORIA DE SISTEMAS INTELIGENTES. Arquivo utilizado na aula de plantão PUC de Sistemas Inteligentes, realizada no prédio do PIC, em 6 de maio de 2025. Arquivo disponibilizado no grupo do Microsoft Teams.
 
-**[3]** - 
-
-**[4]** - 
-
-**[5]** - 
+**[3]** - INEP. Censo da Educação Superior. [S.l.]: Power BI, [s.d.]. Disponível em: https://app.powerbi.com/view?r=eyJrIjoiMGJiMmNiNTAtOTY1OC00ZjUzLTg2OGUtMjAzYzNiYTA5YjliIiwidCI6IjI2ZjczODk3LWM4YWMtNGIxZS05NzhmLWVhNGMwNzc0MzRiZiJ9&pageName=ReportSection4036c90b8a27b5f58f5. Acesso em: 10 de março. 2025.
 
 
 # APÊNDICES
