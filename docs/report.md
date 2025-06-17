@@ -1,4 +1,4 @@
-# Análise de densidade demografica de cientista de dados
+# Análise de nível profissional das pessoas que trabalham com dados
 
 
 **Ian Vinicius Marinho Malta, ian.malta@sga.pucminas.br**
@@ -22,8 +22,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+_**Resumo**: Este projeto tem como objetivo identificar quais atributos mais qualificam um indivíduo que trabalha com dados, por meio de uma análise aprofundada do nível profissional, buscando determinar se ele é qualificado ou não na área. O projeto surgiu devido ao fato de a área de dados ser nova no mercado e estar em constante movimentação, sempre necessitando de novos profissionais. Assim, com este estudo, empresas do setor poderão contar com um ponto de apoio para a escolha de seus colaboradores. Foram escolhidos dois modelos (Decision Tree e Random Forest). Esses modelos buscam identificar o nível do profissional na empresa a partir de certos atributos. Embora apresentem algumas falhas — a principal delas sendo a dificuldade em identificar a classe pleno —, com determinados ajustes, os modelos tendem a se tornar equilibrados._
 
 ---
 
