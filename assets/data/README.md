@@ -1,6 +1,6 @@
 # Artefatos relativos à coleta e preparação de dados
 
-Este diretório mantém os artefatos relatório à modelagem de dados do projeto. 
+Este diretório mantém os artefatos relativos à modelagem de dados do projeto. 
 
 Os principais documentos a serem produzidos são:
 
