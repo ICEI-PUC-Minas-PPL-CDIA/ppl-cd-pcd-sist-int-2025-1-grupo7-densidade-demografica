@@ -1,63 +1,42 @@
 cff-version: 1.0.1
 message: Por favor, cite o repositório utilizando estes metadados.
 title: Análise de nível profissional das pessoas que trabalham com dados
-type: Software 
+type: software
 authors:
- - given-names: Ian Vinicius
-    name-particle: Marinho
+  - given-names: Ian Vinicius
     family-names: Malta
-    name-suffix: Aluno
     email: ian.malta@sga.pucminas.br
     affiliation: Pontifícia Universidade Católica de Minas Gerais
 
- - given-names: João Gabriel
-    name-particle: de Melo
+  - given-names: João Gabriel
     family-names: Neves
-    name-suffix: Aluno
     email: jgmneves@sga.pucminas.br
     affiliation: Pontifícia Universidade Católica de Minas Gerais
 
- - given-names: Thiago
-    name-particle: Couto
+  - given-names: Thiago
     family-names: Ferreira
-    name-suffix: Aluno
     email: thiago.couto@sga.pucminas.br
     affiliation: Pontifícia Universidade Católica de Minas Gerais
 
- - given-names: Thales
-    name-particle: Ribeiro
+  - given-names: Thales
     family-names: Melo
-    name-suffix: Aluno
     email: thales.melo@sga.pucminas.br
     affiliation: Pontifícia Universidade Católica de Minas Gerais
 
- - name-suffix: Professor
-    affiliation: PUC Minas
+  - given-names: Hugo
     family-names: de Paula
-    given-names: Hugo
-
-  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Curto
-    given-names: Hayala
 
- - name: 'Pontifícia Universidade Católica de Minas Gerais'
-    city: Belo Horizonte
-    country: Brazil
-    post-code: '30140108'
-    website: 'https://www.pucminas.br/'
-    address: Rua Cláudio Manoel 1162 (Savassi)
-    date-start: '2024-03-5'
-    date-end: '2024-06-27'
+  - given-names: Hayala
+    family-names: Curto
+    affiliation: PUC Minas
 
 keywords:
   - Ciência de Dados
   - Jupyter Notebooks
   - Aprendizado de Máquina
 
-repository-code: >-
-https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica
-
+repository-code: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo7-densidade-demografica
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-30
