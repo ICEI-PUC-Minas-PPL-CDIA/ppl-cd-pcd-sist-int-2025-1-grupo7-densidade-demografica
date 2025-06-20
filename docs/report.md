@@ -556,7 +556,7 @@ Uma conclusão deve ter 3 partes:
 
 Do código (armazenado no repositório);
 
-Dos artefatos (armazenado do repositório);
+Dos artefatos (armazenado no repositório);
 
 Da apresentação final (armazenado no repositório);
 
