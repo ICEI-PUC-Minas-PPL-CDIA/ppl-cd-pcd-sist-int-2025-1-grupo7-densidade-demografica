@@ -536,7 +536,7 @@ onde se verifica as observações pessoais de cada aluno.
 Uma conclusão deve ter 3 partes:
 
    * Breve resumo do que foi desenvolvido
-	 * Apresenação geral dos resultados obtidos com discussão das vantagens e desvantagens do sistema inteligente
+	 * Apresentação geral dos resultados obtidos com discussão das vantagens e desvantagens do sistema inteligente
 	 * Limitações e possibilidades de melhoria
 
 
