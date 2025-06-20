@@ -1,6 +1,6 @@
 # Artefatos do projeto
 
-Liste os artefatos produzidos, com suas localizaçãoes e descrição do conteúdo.
+Liste os artefatos produzidos, com suas localizações e descrição do conteúdo.
 
 
 * `/Google Colab` - Pasta com os códigos usados na filtragem e os modelos já induzidos
