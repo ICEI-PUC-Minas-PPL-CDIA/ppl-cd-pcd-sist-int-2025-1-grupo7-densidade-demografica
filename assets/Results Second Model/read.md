@@ -30,12 +30,12 @@ Teste: 0.6960 -> O modelo acerta aproximadamente 69.6%.
 | Pleno   | 0.61      | 0.62   | 0.62     | 280     |
 | Sênior  | 0.75      | 0.76   | 0.75     | 276     |  
 
-**Acurácia geral:** 0.67 
+**Acurácia geral:** 0.70 
 
 |             | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
-| Macro Avg   | 0.69      | 0.66   | 0.67     | 727     |
-| Weighted Avg| 0.68      | 0.66   | 0.67     | 727     | 
+| Macro Avg   | 0.70      | 0.70   | 0.70     | 727     |
+| Weighted Avg| 0.70      | 0.70   | 0.70     | 727     | 
 
 # **Random Forest Finalizada**    
 ![download](https://github.com/user-attachments/assets/3450692c-f66e-4fac-b857-16d45e43d9b9)   
