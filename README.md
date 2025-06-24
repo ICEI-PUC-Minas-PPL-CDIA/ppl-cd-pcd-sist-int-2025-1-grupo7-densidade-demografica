@@ -19,6 +19,7 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+[Modelo 1](/src/RandomForestModel(1)(1).ipynb)
+[Modelo 2](/src/DecisionTreeModel.ipynb)
 
 
