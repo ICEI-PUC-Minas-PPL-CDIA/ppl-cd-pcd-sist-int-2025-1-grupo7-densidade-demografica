@@ -9,6 +9,7 @@ Os principais documentos a serem produzidos são:
   * Modelo extra
 
 * `DecisionTreeModel.ipynb`
+  * Modelo Induzido 
  
 * `FiltredTable.ipynb`
   * Primeira filtragem
@@ -17,3 +18,7 @@ Os principais documentos a serem produzidos são:
   * Segunda Filtragem
 
 * `RandomForestModel(1)(1).ipynb`
+  * Modelo Induzido
+    
+* Update_graphics.ipynb
+  * Codigo para os gráficos 
