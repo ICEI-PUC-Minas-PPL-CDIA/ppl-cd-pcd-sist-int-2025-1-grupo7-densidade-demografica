@@ -140,29 +140,36 @@ Gráficos com 2 variáveis:
   
 - Área de Formação / Faixa Salarial   
 <img src=https://github.com/user-attachments/assets/6bbf7696-bf2f-4089-be72-ab5b760984d7 width="900"/>   
+- O gráfico faz uma comparação entre a área de formação e a faixa salarial de cada indivíduo, mostrando qual área se tende a receber um salário maior (Quantidade = número de pessoas).
 
 - Idade / Gênero 
-<img src=https://github.com/user-attachments/assets/d1451c58-0cb5-483d-bc4d-646ec5b01f07 width="900">  
+<img src=https://github.com/user-attachments/assets/d1451c58-0cb5-483d-bc4d-646ec5b01f07 width="900">
+- O gráfico faz uma comparação entre a faixa de idade e o gênero, mostrando qual é a tendência no mercado de trabalho com base na idade e no gênero (Quantidade = número de pessoas).
 
 - Nível de experiência / Cargo atual 
-<img src=https://github.com/user-attachments/assets/1f8bfe62-e667-463c-9900-281723ec4456 width="900">  
+<img src=https://github.com/user-attachments/assets/1f8bfe62-e667-463c-9900-281723ec4456 width="900">
+- O gráfico faz uuma comparação entre o nível em anos de experiência e o crgo atual do indivíduo, mostrando qual é a tendência do cargo ser ao ter mais tempo de experiência (Quantidade = número de pessoas).
 
 - Faixa Etária/Nível na Empresa  
-<img src=https://github.com/user-attachments/assets/0a74d5dc-13f1-4cc2-9992-959ac2ab19d7 width="900">  
+<img src=https://github.com/user-attachments/assets/0a74d5dc-13f1-4cc2-9992-959ac2ab19d7 width="900">
+- O gráfico faz uma comparação entre a faixa de idade e o nível da empresa, mostrando qual a tendência do nível empresarial ser a partir da idade (Quantidade = número de pessoas).
 
 - Nível na Empresa/Salário    
-<img src=https://github.com/user-attachments/assets/03aacc34-766c-49c2-afcb-168b67c4d63b width="900">   
+<img src=https://github.com/user-attachments/assets/03aacc34-766c-49c2-afcb-168b67c4d63b width="900">
+- O gráfico faz uma comparação entre a faixa salarial e o nível da empresa, mostrando qual a tendência do salário ser a partir do nível empresarial (Quantidade = número de pessoas).
 
 - Faixa Salarial/Quanto tempo de experiência na área de dados você tem?    
-<img src=https://github.com/user-attachments/assets/3c9ec093-dd26-439d-a74c-a1e358161cc7 width="900">    
+<img src=https://github.com/user-attachments/assets/3c9ec093-dd26-439d-a74c-a1e358161cc7 width="900">
+- O gráfico faz uma comparação entre a faixa salarial e o tempo de experiência, mostrando qual a tendência do salário ser a partir da quantidade de tempo de experiência do indivíduo (Quantidade = número de pessoas).
 
 - Faixa idade/Quanto tempo de experiência na área de dados você tem?   
 <img src=https://github.com/user-attachments/assets/0a09a90e-4353-4093-bad4-7641e424daad width="900">    
- 
+- O gráfico faz uma comparação entre a faixa de idade e o tempo de experiência, mostrando qual a tendência do nível de expêriencia ser a partir da idade do indivíddo (Quantidade = número de pessoas).
 
 - **Gráfico base auxiliar**      
-<img src=https://github.com/user-attachments/assets/08a5812f-1697-481a-add7-38c93b236c07 width="600">     
- 
+<img src=https://github.com/user-attachments/assets/08a5812f-1697-481a-add7-38c93b236c07 width="600">
+- O gráfico foi feito co base na  base auxiliar e representa a quantidade de cursos de Ciência de Dados por estado no Brasil, com base em códigos.
+
 Curso de Ciência de Dados por Estado (código)       
 - SP - 1521433; 1536760; 1538622; 1543013; 1545554; 1589553; 1599656; 1603036; 1618685; (9)    
 - MG - 1600504; (1)    
