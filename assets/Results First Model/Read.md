@@ -4,9 +4,25 @@
 ![image](https://github.com/user-attachments/assets/19165905-7c22-4256-8f58-4870b81af568)     
 Treino: 0.7289 -> O modelo acerta aproximadamente 72.9%.     
 
+| Código | Classe  |
+|--------|---------|
+| 0      | Júnior  |
+| 1      | Pleno   |
+| 2      | Sênior  |
+
+- A imagem é uma matriz de confusão de teste utilizada para classificar o nível de desempenho das classes no modelo. Cada linha representa a classe real dos dados e as colunas a classe prevista.
+
 - Visualização da matriz de confusão (teste)    
 ![image](https://github.com/user-attachments/assets/92b60300-a7db-464b-a9c2-ffe6d4362a0f)       
 Teste: 0.6795 -> O modelo acerta aproximadamente 67.9%.    
+
+| Código | Classe  |
+|--------|---------|
+| 0      | Júnior  |
+| 1      | Pleno   |
+| 2      | Sênior  |
+
+- A imagem é uma matriz de confusão de teste utilizada para classificar o nível de desempenho das classes no modelo a partir de previsões corretas ou incorretas. Cada linha representa a classe real dos dados e as colunas a classe prevista.
 
 # **Precisão treino**       
 
