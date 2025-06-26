@@ -545,13 +545,14 @@ O modelo Decision Tree apresentou uma acurácia de 68%, enquanto o Random Forest
 
 **Colocar link:**
 
-Do código (armazenado no repositório);
+[Acesse os códigos aqui (decision tree)](src/DecisionTreeModel.ipynb)
+[E aqui (random forest)](src/RandomForestModel(1)(1).ipynb)
 
-Dos artefatos (armazenado no repositório);
+[Acesse os artefatos aqui](src)
 
-Da apresentação final (armazenado no repositório);
+[Acesse a apresentação final aqui](docs/slides_project_group7.pdf)
 
-Do vídeo de apresentação (armazenado no repositório).
+[Acesse o vídeo de apresentação aqui](Pitch_comprimido.mp4)
 
 
 
