@@ -7,7 +7,9 @@
 - Masculino: 75.9%  
 - Feminino: 23.6%  
 - preferiu não informar: 0.3%  
-- outros: 0.1%  
+- outros: 0.1%
+
+- O gráfico demonstra a diferença de gênero entre as pessoas que trabalham com dados.   
 
 **2- Faixa Etária**
 
@@ -19,7 +21,9 @@
 - 1º Quartil (Q1): 26 anos    
 - 3º Quartil (Q3): 34 anos  
 - Variância: 84,36   
-- Desvio-padrão: 9,19 anos   
+- Desvio-padrão: 9,19 anos
+
+- O gráfico demonstra a distribuição da faixa etária das pessoas que trabalham com dados.
 
 **3- Faixa Salarial**
 
@@ -30,6 +34,8 @@
 - Mediana: R$7,000.50     
 - 1º Quartil (Q1): R$5,000.50      
 - 3º Quartil (Q3): R$10,000.50  
+
+- O Gráfico demonstra a variedade e quantidade dos salários das pessoas que trabalham com dados.
 
 **4- Nível de experiência**
 
@@ -46,11 +52,15 @@
 - mais que 10 anos: 6.81% 
 - não possui experiência: 0.2%
 
+- O gráfico demonstra o nível de experiência dos profissionais da área de dados.
+
 **5- Ciêntista por Estado**
 
 Moda: São Paulo (SP) - (1126)
 
 <img src=https://github.com/user-attachments/assets/f9bf37e4-c038-47b5-a761-6032e8e0bb93 width="900"/> 
+
+- O gráfico demonstra o número de profissionais de dado em cada estado. 
 
 **6- Raça/Etnia/Cor**
 
@@ -64,7 +74,9 @@ Moda: São Paulo (SP) - (1126)
 - preta: 7.3%  
 - preferiu não informar: 0.8%  
 - outra: 0.2%  
-- Indígena: 0.2%  
+- Indígena: 0.2%
+
+- O gráfico demonstra a variedade e a quantidade de variação étnica dos profissionais de dados.
 
 **7- Ciêntistas por Região**
 
@@ -76,7 +88,9 @@ Moda: São Paulo (SP) - (1126)
 - Sul: 20.0%  
 - Nordeste: 11.2%  
 - Centro-Oeste: 6.3%  
-- Norte: 1.4%  
+- Norte: 1.4%
+
+- O gráfico demonstra a quantidade de profissionais de dados em porcentagem nos estados do Brasil.
 
 **8- Nível de Ensino**
 
@@ -89,7 +103,9 @@ Moda: São Paulo (SP) - (1126)
 - Mestrado: 12.8%   
 - Doutorado ou Phd: 3.9%  
 - Estudante Graduação: 12.5
-- 
+
+- O gráfico demonstra o grau de escolarização em porcentagem dos profissionais de dados.
+  
 **9- Situação Empresarial**
 
 - Moda: Empregado(CLT) - (2326)
@@ -102,7 +118,9 @@ Moda: São Paulo (SP) - (1126)
 - Empresa de fora do Brasil: 2.8%  
 - Servidor Público: 1.8%  
 - Freelancer: 0.5%
-- Prefiro não informar: 0.1% 
+- Prefiro não informar: 0.1%
+
+- O gráfico demonstra a situação empresarial dos profissionais de dados em porcentagem.
 
 **10- Cargo**
 
@@ -118,7 +136,9 @@ Moda: São Paulo (SP) - (1126)
 - Engenheiro de machine learning: 2.5%  
 - Estatístico: 0.7%  
 - Analista de Inteligência de Mercado: 1.3%  
-- Administrador de Banco de Dados: 0.6%  
+- Administrador de Banco de Dados: 0.6%
+
+- O gráfico demonstra quais cargos que trabalham com dados e quantidade de pessoas que atuam neles em porcentagem.
 
 **11- Área de Formação**
 
@@ -134,7 +154,9 @@ Moda: São Paulo (SP) - (1126)
 - Química / Física: 3.0%  
 - Marketing: 1.9%  
 - Ciências Biológicas: 2.0%  
-- Ciências Sociais: 1.6%    
+- Ciências Sociais: 1.6%
+
+- O gráfico demonstra a área que os profissionais de dados se formaram, eles são quantificados em porcentagem.
 
 Gráficos com 2 variáveis:   
   
